@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AETHEL & BIT | L'Art de l'Absence</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@200;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg aethel-nav">
+            <div class="container-fluid px-lg-5">
+                <a class="navbar-brand ls-3 text-warning fw-light" href="#">AETHEL & BIT</a>
+                <div class="d-flex align-items-center gap-4">
+                    <a href="#" class="nav-link-aethel ls-2 d-none d-md-block" data-bs-toggle="modal"
+                        data-bs-target="#contactoModal">CONTACT</a>
+                    <button class="btn border-0 text-warning position-relative" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasCart">
+                        <i class="bi bi-bag"></i>
+                        <span id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark"
+                            style="font-size: 0.6rem;">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-aethel">
+            <div class="container text-center">
+                <span class="text-warning text-uppercase ls-3 mb-3 d-block">Collection 2026</span>
+                <h1 class="display-1 text-white mb-4">L'Art de l'Absence</h1>
+                <p class="lead mb-5 mx-auto text-info" style="max-width: 600px; opacity: 0.8;">
+                    Où la technologie rencontre l'âme. Redécouvrez le luxe du silence.
+                </p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#produits" class="btn btn-aethel">Explorer</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="produits" class="py-5">
+            <div class="container mt-5">
+                <h2 class="serif text-center text-white ls-2 mb-4">LES PIÈCES MAÎTRESSES</h2>
+
+                <div class="btns d-flex justify-content-center gap-2 py-4">
+                    <button type="button" class="btn btn-outline-warning btn-sm active" data-filter="all">All</button>
+                    <button type="button" class="btn btn-outline-warning btn-sm"
+                        data-filter="Sanctuaires Personnels">Sanctuaires Personnels</button>
+                    <button type="button" class="btn btn-outline-warning btn-sm" data-filter="Art et Expression">Art et
+                        Expression</button>
+                    <button type="button" class="btn btn-outline-warning btn-sm" data-filter="Art de Vivre">Art de
+                        Vivre</button>
+                    <button type="button" class="btn btn-outline-warning btn-sm"
+                        data-filter="Expériences">Expériences</button>
+
+                </div>
+
+                <div class="row containerCards g-4"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-5" style="background: #050505; border-top: 1px solid rgba(197, 160, 89, 0.1);">
+        <div class="container py-5">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <h4 class="serif text-warning ls-3 mb-4">AETHEL & BIT</h4>
+                    <p class="small opacity-50 pe-lg-5 mb-4">Redéfinir la présence à travers l'absence. Créateurs de
+                        sanctuaires technologiques.</p>
+
+                    <div class="social-footer d-flex flex-column gap-2">
+                        <a href="#" class="text-decoration-none small ls-2 text-info opacity-50 hover-gold"><i
+                                class="bi bi-instagram me-2"></i> INSTAGRAM</a>
+                        <a href="#" class="text-decoration-none small ls-2 text-info opacity-50 hover-gold"><i
+                                class="bi bi-vimeo me-2"></i> VIMEO / ART</a>
+                        <a href="#" class="text-decoration-none small ls-2 text-info opacity-50 hover-gold"><i
+                                class="bi bi-linkedin me-2"></i> L'ATELIER</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="text-warning small ls-2 uppercase mb-4">ÉTHIQUE</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li>Le <a href="#">Manifeste</a></li>
+                        <li><a href="#">Logistique Lente</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="text-warning small ls-2 mb-4">LE CERCLE</h6>
+                    <form class="d-flex border-bottom border-warning border-opacity-25 pb-2">
+                        <input type="email" class="form-control bg-transparent border-0 text-white shadow-none p-0"
+                            placeholder="Votre email">
+                        <button type="submit" class="btn btn-link text-warning p-0 text-decoration-none">OK</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="btnUp" class="btn-ascension show" aria-label="Volver arriba">
+        <i class="bi bi-arrow-up"></i>
+        <span class="ascension-text">TOP</span>
+    </div>
+
+    <div class="modal fade" id="productosModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-primary border-warning border-opacity-25 rounded-0">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title serif text-warning ls-2">Détail de produit</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contactoModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-primary border-warning border-opacity-25 rounded-0">
+                <div class="card border-0 shadow-lg rounded-4" style="width: 45rem;">
+                    <div class="card-body p-5">
+
+                        <div class="text-center mb-4">
+                            <div class="bg-primary text-white d-inline-block p-3 rounded-circle mb-3">
+                                <i class="fa-solid fa-paper-plane fa-2x"></i>
+                            </div>
+                            <h2 class="fw-bold">Contactez-nous</h2>
+                            <p class="text-muted">N'hésitez pas à nous contacter</p>
+                        </div>
+
+                        <form class="row g-3">
+
+                            <div class="col-md-6">
+                                <label for="prenom" class="form-label">Prenom</label>
+                                <input type="text" class="form-control aethel-input" id="prenom"
+                                    placeholder="Entrez votre prenom" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="nom" class="form-label">Nom</label>
+                                <input type="text" class="form-control aethel-input" id="nom"
+                                    placeholder="Entrez votre nom" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="pass1" class="form-label">Message</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text"><i class="fa-solid fa-pencil"></i></span>
+                                    <textarea type="text" class="form-control" id="textArea"
+                                        placeholder="Minimum 8 caractères" rows="3" required> </textarea>
+                                    <div class="invalid-feedback">Message.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="mb-4 form-check">
+                                <input type="checkbox" class="form-check-input" id="terminos" required>
+                                <label class="form-check-label small text-muted" for="terminos">
+                                    Je ne suis pas <a href="#" class="text-decoration-none">un robot</a>
+                                </label>
+                                <div class="invalid-feedback">
+                                    debe aceptar los terminos
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-aethel w-100 py-2 fw-bold rounded-0 shadow-sm">
+                                envoyer<i class="fa-solid fa-arrow-right ms-2"></i>
+                            </button>
+
+                        </form>
+
+                        <div class="text-center mt-4">
+                            <p class="small text-muted">Avez-vous déjà un compte ? <a href="#"
+                                    class="fw-bold text-decoration-none">Se connecter</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end border-warning" tabindex="-1" id="offcanvasCart">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Panier</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cart-items" class="list-group list-group-flush mb-3">
+            </div>
+            <div class="border-top pt-3">
+                <h5>Total: <span id="cart-total">$ 0.00</span></h5>
+                <button class="btn btn-aethel w-100">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+    <script src="js/init.js"></script>
+    <script src="js/btnUp.js"></script>
+</body>
+
+</html>

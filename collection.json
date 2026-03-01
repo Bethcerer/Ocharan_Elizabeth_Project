@@ -1,0 +1,269 @@
+{
+    "brand": "Aethel & Bit",
+    "collection": "The Conscious Luxury Collection 2026",
+    "currency": "EUR",
+    "products": [
+        {
+            "id": "AB-001",
+            "category": "Santuarios Personales / Sanctuaires Personnels",
+            "name": {
+                "en": "The Silent Stone",
+                "fr": "La Pierre de Silence"
+            },
+            "description": {
+                "en": "An obsidian device that creates a 3-meter signal-free sanctuary for deep focus and digital detox.",
+                "fr": "Un dispositif en obsidienne créant un sanctuaire de 3 mètres sans ondes pour une concentration profonde."
+            },
+            "price":250
+            
+        },
+        {
+            "id": "AB-002",
+            "category": "Santuarios Personales / Sanctuaires Personnels",
+            "name": {
+                "en": "Aura Mirror",
+                "fr": "Miroir Aura"
+            },
+            "description": {
+                "en": "Smart mirror that adjusts home lighting based on biometric cortisol level analysis.",
+                "fr": "Miroir intelligent ajustant l'éclairage domestique selon l'analyse biométrique du cortisol."
+            },
+            "price":250
+           
+        },
+        {
+            "id": "AB-003",
+            "category": "Santuarios Personales / Sanctuaires Personnels",
+            "name": {
+                "en": "Deep Breath Pillow",
+                "fr": "Oreiller Respiration Profonde"
+            },
+            "description": {
+                "en": "Haptic technology pillow that synchronizes its rhythm with yours to induce REM sleep.",
+                "fr": "Oreiller à technologie haptique synchronisant son rythme au vôtre pour induire le sommeil paradoxal."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-004",
+            "category": "Santuarios Personales / Sanctuaires Personnels",
+            "name": {
+                "en": "Neural-Ink Tablet",
+                "fr": "Tablette Neural-Ink"
+            },
+            "description": {
+                "en": "E-paper device for distraction-free writing with AI-powered conceptual organization.",
+                "fr": "Appareil e-paper pour l'écriture sans distraction avec organisation conceptuelle par IA."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-005",
+            "category": "Santuarios Personales / Sanctuaires Personnels",
+            "name": {
+                "en": "Chronos Sandglass",
+                "fr": "Sablier Chronos"
+            },
+            "description": {
+                "en": "Micro-LED hourglass that measures flow state and productivity instead of linear time.",
+                "fr": "Sablier à micro-LED mesurant l'état de 'flow' et la productivité plutôt que le temps linéaire."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-006",
+            "category": "Arte y Expresión / Art et Expression",
+            "name": {
+                "en": "The Ghost Composer",
+                "fr": "Le Compositeur Fantôme"
+            },
+            "description": {
+                "en": "A baby grand piano that co-creates and completes melodies in real-time using generative AI.",
+                "fr": "Un piano quart-de-queue qui co-crée et complète vos mélodies en temps réel via l'IA générative."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-007",
+            "category": "Arte y Expresión / Art et Expression",
+            "name": {
+                "en": "Scent-Memory Diffuser",
+                "fr": "Diffuseur de Souvenirs Olfactifs"
+            },
+            "description": {
+                "en": "Generates custom fragrances based on the GPS coordinates of your favorite digital memories.",
+                "fr": "Génère des fragrances sur mesure basées sur les coordonnées GPS de vos souvenirs numériques favoris."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-008",
+            "category": "Arte y Expresión / Art et Expression",
+            "name": {
+                "en": "The Infinite Canvas",
+                "fr": "La Toile Infinie"
+            },
+            "description": {
+                "en": "Ultra-thin digital frame displaying generative art that evolves with ambient light and weather.",
+                "fr": "Cadre numérique ultra-fin affichant un art génératif évoluant selon la lumière et la météo."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-009",
+            "category": "Arte y Expresión / Art et Expression",
+            "name": {
+                "en": "Linguistic Quill",
+                "fr": "La Plume Linguistique"
+            },
+            "description": {
+                "en": "Fountain pen that translates handwritten text in real-time via an invisible OLED display.",
+                "fr": "Stylo plume traduisant le texte manuscrit en temps réel via un écran OLED invisible."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-010",
+            "category": "Arte y Expresión / Art et Expression",
+            "name": {
+                "en": "The Mood Vinyl",
+                "fr": "Le Vinyle d'Humeur"
+            },
+            "description": {
+                "en": "Ceramic vinyl record that adapts its playlist based on the heart rate of people in the room.",
+                "fr": "Disque vinyle en céramique adaptant sa playlist selon le rythme cardiaque des personnes présentes."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-011",
+            "category": "Estilo de Vida / Art de Vivre",
+            "name": {
+                "en": "Hydro-Zen Planter",
+                "fr": "Jardinière Hydro-Zen"
+            },
+            "description": {
+                "en": "Levitating planter that autonomously moves towards optimal sunlight zones in your home.",
+                "fr": "Jardinière en lévitation se déplaçant de façon autonome vers les zones d'ensoleillement optimal."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-012",
+            "category": "Estilo de Vida / Art de Vivre",
+            "name": {
+                "en": "The Nomad Tent",
+                "fr": "La Tente Nomade"
+            },
+            "description": {
+                "en": "Graphene and technical silk tent that harvests solar energy for ultra-luxury off-grid living.",
+                "fr": "Tente en soie technique et graphène récoltant l'énergie solaire pour un luxe hors réseau."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-013",
+            "category": "Estilo de Vida / Art de Vivre",
+            "name": {
+                "en": "Bio-Leather Briefcase",
+                "fr": "Mallette en Bio-Cuir"
+            },
+            "description": {
+                "en": "Mycelium leather briefcase grown to order with custom structural monograms.",
+                "fr": "Mallette en cuir de mycélium cultivée sur commande avec monogrammes structurels personnalisés."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-014",
+            "category": "Estilo de Vida / Art de Vivre",
+            "name": {
+                "en": "The Solar Decanter",
+                "fr": "Le Décanteur Solaire"
+            },
+            "description": {
+                "en": "Uses solar ultrasonic frequencies to accelerate the molecular aging of fine wines.",
+                "fr": "Utilise des fréquences ultrasoniques solaires pour accélérer le vieillissement moléculaire des grands crus."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-015",
+            "category": "Estilo de Vida / Art de Vivre",
+            "name": {
+                "en": "Aurora Lantern",
+                "fr": "Lanterne Aurora"
+            },
+            "description": {
+                "en": "Outdoor lamp that replicates the exact light data from the previous night's Arctic aurora.",
+                "fr": "Lampe d'extérieur répliquant les données lumineuses exactes de l'aurore boréale de la veille."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-016",
+            "category": "Experiencias / Expériences",
+            "name": {
+                "en": "Legacy Archive",
+                "fr": "Archive d'Héritage"
+            },
+            "description": {
+                "en": "An interactive AI biography service that preserves your voice and wisdom for future generations.",
+                "fr": "Service de biographie interactive par IA préservant votre voix et sagesse pour l'avenir."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-017",
+            "category": "Experiencias / Expériences",
+            "name": {
+                "en": "Digital Detox Retreat Kit",
+                "fr": "Kit de Retraite Digital Detox"
+            },
+            "description": {
+                "en": "Time-locked design safe with printed itineraries and analog photography gear.",
+                "fr": "Coffre-fort temporisé incluant des itinéraires papier et du matériel photo analogique."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-018",
+            "category": "Experiencias / Expériences",
+            "name": {
+                "en": "Personal Soundscape",
+                "fr": "Paysage Sonore Personnel"
+            },
+            "description": {
+                "en": "A unique 24-hour soundtrack composed for your life routines by a Human-AI collective.",
+                "fr": "Une bande sonore unique de 24h composée pour votre vie par un collectif humain-IA."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-019",
+            "category": "Experiencias / Expériences",
+            "name": {
+                "en": "DNA Gastronomy Box",
+                "fr": "Coffret Gastronomie ADN"
+            },
+            "description": {
+                "en": "Precision nutrition kit with ingredients tailored to your specific genetic profile.",
+                "fr": "Kit de nutrition de précision avec des ingrédients adaptés à votre profil génétique."
+            },
+            "price":250
+        },
+        {
+            "id": "AB-020",
+            "category": "Experiencias / Expériences",
+            "name": {
+                "en": "The Perspective Lens",
+                "fr": "Lentille de Perspective"
+            },
+            "description": {
+                "en": "Augmented reality sunglasses that visually filter out urban advertising and smog.",
+                "fr": "Lunettes de réalité augmentée filtrant visuellement la publicité urbaine et la pollution."
+            },
+            "price":250
+        }
+    ]
+}

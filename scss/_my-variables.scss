@@ -1,0 +1,24 @@
+// --- Aethel & Bit: Brand Palette ---
+$obsidian-black: #0D0D0D;
+$obsidian-matte: #121212;
+$titanium-silver: #E5E5E5;
+$muted-gold: #C5A059;
+$raw-linen: #D2CDC4;
+$moss-deep: #2D3A2D;
+
+// --- Typography ---
+$font-serif: 'Cormorant Garamond', serif;
+$font-sans: 'Inter', sans-serif;
+
+// --- Bootstrap Overrides ---
+$primary: $obsidian-matte;
+$secondary: $titanium-silver;
+$warning: $muted-gold;
+$info: $raw-linen;
+$body-bg: $obsidian-black;
+$body-color: $raw-linen;
+
+// --- Custom Spacing & Transitions ---
+$aethel-transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+$ls-wide: 5px;
+$ls-normal: 2px;
