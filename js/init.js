@@ -110,11 +110,10 @@ btns.forEach((button) => {
 });
 
 loadJson();
-
+/* Btn ascencion */
 const btnAscension = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
-  // Si el usuario baja más de 300px, añade la clase 'show'
   if (window.scrollY > 300) {
     btnAscension.classList.add("show");
   } else {
@@ -122,7 +121,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Al hacer clic, vuelve arriba suavemente
 btnAscension.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
