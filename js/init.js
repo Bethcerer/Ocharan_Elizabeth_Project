@@ -4,32 +4,32 @@ let cData = [];
 const lang = "fr";
 
 container.addEventListener("click", (e) => {
-    if (e.target.classList.contains("btn-aethel")) {
-        const id = e.target.dataset.id;
-        showProductDetails(id);
-    }
+  if (e.target.classList.contains("btn-aethel")) {
+    const id = e.target.dataset.id;
+    showProductDetails(id);
+  }
 });
 
 async function loadJson() {
-    try {
-        const reponse = await fetch("collection.json");
+  try {
+    const reponse = await fetch("collection.json");
 
-        const data = await reponse.json();
-        cData = data.products || data;
-        loadCards(cData);
-    } catch (error) {
-        console.error("Erreur:", error);
-        container.innerHTML = `<p class="text-white">Erreur lors du chargement des produits</p>`;
-    }
+    const data = await reponse.json();
+    cData = data.products || data;
+    loadCards(cData);
+  } catch (error) {
+    console.error("Erreur:", error);
+    container.innerHTML = `<p class="text-white">Erreur lors du chargement des produits</p>`;
+  }
 }
 
 function loadCards(products) {
-    container.innerHTML = "";
-    products.forEach((item) => {
-        const cardCol = document.createElement("div");
-        cardCol.className = "col-md-4 mb-4";
+  container.innerHTML = "";
+  products.forEach((item) => {
+    const cardCol = document.createElement("div");
+    cardCol.className = "col-md-4 mb-4";
 
-        cardCol.innerHTML = `
+    cardCol.innerHTML = `
             <div class="card card-premium h-100 p-4"> 
                 <div class="product-image-container mb-4">
                     <img class="img-fluid w-100 h-100 object-fit-cover" 
@@ -50,21 +50,21 @@ function loadCards(products) {
                     </div>
                 </div>
             </div> `;
-        container.appendChild(cardCol);
-    });
+    container.appendChild(cardCol);
+  });
 }
 
 function showProductDetails(id) {
-    const prod = cData.find((p) => p.id === id);
-    if (!prod) return;
+  const prod = cData.find((p) => p.id === id);
+  if (!prod) return;
 
-    const modalTitle = document.querySelector("#productosModal .modal-title");
-    const modalBody = document.querySelector("#productosModal .modal-body");
+  const modalTitle = document.querySelector("#productosModal .modal-title");
+  const modalBody = document.querySelector("#productosModal .modal-body");
 
-    modalTitle.classList.add("serif", "ls-2");
-    modalTitle.innerText = prod.name[lang];
+  modalTitle.classList.add("serif", "ls-2");
+  modalTitle.innerText = prod.name[lang];
 
-    modalBody.innerHTML = `
+  modalBody.innerHTML = `
     <div class="row align-items-center g-5">
         <div class="col-md-6">
             <div class="border border-warning border-opacity-10 p-2">
@@ -88,59 +88,58 @@ function showProductDetails(id) {
         </div>
     </div>`;
 
-    const modalElement = document.getElementById("productosModal");
-    const bsModal = bootstrap.Modal.getOrCreateInstance(modalElement);
-    bsModal.show();
+  const modalElement = document.getElementById("productosModal");
+  const bsModal = bootstrap.Modal.getOrCreateInstance(modalElement);
+  bsModal.show();
 }
 
 const btns = document.querySelectorAll("[data-filter]");
 btns.forEach((button) => {
-    button.addEventListener("click", () => {
-        const filter = button.getAttribute("data-filter");
-        btns.forEach((btn) => btn.classList.remove("active"));
-        button.classList.add("active");
+  button.addEventListener("click", () => {
+    const filter = button.getAttribute("data-filter");
+    btns.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
 
-        if (filter === "all") {
-            loadCards(cData);
-        } else {
-            const filtered = cData.filter((item) => item.category.includes(filter));
-            loadCards(filtered);
-        }
-    });
+    if (filter === "all") {
+      loadCards(cData);
+    } else {
+      const filtered = cData.filter((item) => item.category.includes(filter));
+      loadCards(filtered);
+    }
+  });
 });
 
 loadJson();
 
-const backToTop = document.getElementById("backToTop");
+const btnAscension = document.getElementById("backToTop");
 
-window.onscroll = function () {
-    if (
-        document.body.scrollTop > 400 ||
-        document.documentElement.scrollTop > 400
-    ) {
-        backToTop.classList.add("show");
-    } else {
-        backToTop.classList.remove("show");
-    }
-};
+window.addEventListener("scroll", () => {
+  // Si el usuario baja más de 300px, añade la clase 'show'
+  if (window.scrollY > 300) {
+    btnAscension.classList.add("show");
+  } else {
+    btnAscension.classList.remove("show");
+  }
+});
 
-backToTop.onclick = function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-    });
-};
+// Al hacer clic, vuelve arriba suavemente
+btnAscension.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
 
 /* validation form */
 const nom = document.querySelector("#nom");
 const prenom = document.querySelector("#prenom");
 
 nom.addEventListener("input", () => {
-    if (nom.value !== "") {
-        nom.classList.remove("is-invalide");
-        nom.classList.add("is-valide");
-    } else {
-        nom.classList.add("is-invalide");
-        nom.classList.remove("is-valide");
-    }
+  if (nom.value !== "") {
+    nom.classList.remove("is-invalide");
+    nom.classList.add("is-valide");
+  } else {
+    nom.classList.add("is-invalide");
+    nom.classList.remove("is-valide");
+  }
 });

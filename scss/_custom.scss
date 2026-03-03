@@ -186,3 +186,58 @@ body {
 .modal-content {
     box-shadow: 0 0 50px rgba(0,0,0,1);
 }
+
+/* --- Btn Ascension --- */
+.btn-ascension {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: rgba($obsidian-black, 0.6); 
+    backdrop-filter: blur(8px);
+    color: $muted-gold; 
+    border: 1px solid rgba($muted-gold, 0.2);
+    width: 50px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px); 
+    transition: $aethel-transition; 
+}
+
+.btn-ascension.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.btn-ascension:hover {
+    border-color: $muted-gold;
+    background: $obsidian-matte;
+    color: $titanium-silver;
+}
+
+.btn-ascension i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    display: inline-block; 
+}
+
+.btn-ascension:hover i {
+    transform: translateY(-5px);
+}
+
+.ascension-text {
+    font-family: $font-sans;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: $ls-normal;
+    margin-top: 8px;
+    font-weight: 200;
+}
