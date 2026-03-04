@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg aethel-nav">
+        <nav class="navbar navbar-expand-lg aethel-nav sticky-top shadow">
             <div class="container-fluid px-lg-5">
                 <a class="navbar-brand ls-3 text-warning fw-light" href="#">AETHEL & BIT</a>
                 <div class="d-flex align-items-center gap-4">
@@ -114,7 +114,7 @@
         <i class="bi bi-arrow-up"></i>
         <span class="ascension-text">TOP</span>
     </div>
-
+    <!-- modal products -->
     <div class="modal fade" id="productosModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content bg-primary border-warning border-opacity-25 rounded-0">
@@ -127,79 +127,56 @@
             </div>
         </div>
     </div>
-
+    <!-- contact modal -->
     <div class="modal fade" id="contactoModal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content bg-primary border-warning border-opacity-25 rounded-0">
-                <div class="card border-0 shadow-lg rounded-4" style="width: 45rem;">
-                    <div class="card-body p-5">
-
-                        <div class="text-center mb-4">
-                            <div class="bg-primary text-white d-inline-block p-3 rounded-circle mb-3">
-                                <i class="fa-solid fa-paper-plane fa-2x"></i>
-                            </div>
-                            <h2 class="fw-bold">Contactez-nous</h2>
-                            <p class="text-muted">N'hésitez pas à nous contacter</p>
-                        </div>
-
-                        <form class="row g-3">
-
-                            <div class="col-md-6">
-                                <label for="prenom" class="form-label">Prenom</label>
-                                <input type="text" class="form-control aethel-input" id="prenom"
-                                    placeholder="Entrez votre prenom" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="nom" class="form-label">Nom</label>
-                                <input type="text" class="form-control aethel-input" id="nom"
-                                    placeholder="Entrez votre nom" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <label for="pass1" class="form-label">Message</label>
-                                <div class="input-group has-validation">
-                                    <span class="input-group-text"><i class="fa-solid fa-pencil"></i></span>
-                                    <textarea type="text" class="form-control" id="textArea"
-                                        placeholder="Minimum 8 caractères" rows="3" required> </textarea>
-                                    <div class="invalid-feedback">Message.
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="mb-4 form-check">
-                                <input type="checkbox" class="form-check-input" id="terminos" required>
-                                <label class="form-check-label small text-muted" for="terminos">
-                                    Je ne suis pas <a href="#" class="text-decoration-none">un robot</a>
-                                </label>
-                                <div class="invalid-feedback">
-                                    debe aceptar los terminos
-                                </div>
-                            </div>
-
-                            <button type="submit" class="btn btn-aethel w-100 py-2 fw-bold rounded-0 shadow-sm">
-                                envoyer<i class="fa-solid fa-arrow-right ms-2"></i>
-                            </button>
-
-                        </form>
-
-                        <div class="text-center mt-4">
-                            <p class="small text-muted">Avez-vous déjà un compte ? <a href="#"
-                                    class="fw-bold text-decoration-none">Se connecter</a></p>
-                        </div>
-
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0">
+                <div class="modal-body p-5">
+                    <div class="text-center mb-5">
+                        <span class="serif text-warning ls-3 text-uppercase small">Contact</span>
+                        <h2 class="serif display-6 text-white mt-2">Le Cercle Privé</h2>
+                        <div class="border-bottom border-warning opacity-25 w-25 mx-auto mt-3"></div>
                     </div>
+
+                    <form class="row g-4">
+                        <div class="col-md-6">
+                            <label for="prenom" class="form-label">Prenom</label>
+                            <input type="text" class="form-control aethel-input" id="prenom" placeholder="Ex: Jean"
+                                required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="nom" class="form-label">Nom</label>
+                            <input type="text" class="form-control aethel-input" id="nom" placeholder="Ex: Aethel"
+                                required>
+                        </div>
+                        <div class="col-12">
+                            <label for="textArea" class="form-label">Votre Message</label>
+                            <textarea class="form-control aethel-input" id="textArea" rows="3"
+                                placeholder="L'art du silence..." required></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input bg-transparent border-secondary"
+                                    id="terminos" required>
+                                <label class="form-check-label small opacity-50 italic" for="terminos">
+                                    Je ne suis pas un robot
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn btn-aethel w-100 py-3">
+                                Envoyer la demande
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- cart -->
     <div class="offcanvas offcanvas-end border-warning" tabindex="-1" id="offcanvasCart">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title">Panier</h5>
