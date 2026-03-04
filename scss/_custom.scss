@@ -1,11 +1,32 @@
-/* --- Global & Body --- */
 body {
     background-color: $obsidian-black;
     color: $body-color;
     font-family: $font-sans;
 }
+/* navbar */
+.aethel-nav {
+    background: rgba($obsidian-black, 0.85);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba($muted-gold, 0.1);
+    padding: 20px 0;
+}
 
-/* --- Hero Section --- */
+.nav-link-aethel {
+    color: $raw-linen;
+    letter-spacing: $ls-normal;
+    font-size: 0.9rem;
+    transition: $aethel-transition;
+}
+
+.nav-link-aethel:hover {
+    color: $muted-gold;
+}
+.sticky-top.shadow {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 
+                0 1px 0 rgba(197, 160, 89, 0.05) !important;
+}
+
+/* hero section */
 .hero-aethel {
     height: 100vh;
     background: radial-gradient(circle at center, $obsidian-matte 0%, $obsidian-black 100%);
@@ -21,7 +42,7 @@ body {
     color: $titanium-silver;
 }
 
-/* --- Cards Premium --- */
+/* cards */
 .card-premium {
     
     background-color: $obsidian-matte; 
@@ -48,7 +69,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* --- Imágenes de Producto --- */
+/* Products */
 .card-premium img {
     transition: transform 1.2s cubic-bezier(0.25, 0.8, 0.25, 1);
     filter: grayscale(40%) brightness(0.8); 
@@ -59,7 +80,7 @@ body {
     filter: grayscale(0%) brightness(1);
 }
 
-/* --- Botones Aethel --- */
+/* Btns Aethel */
 .btn-aethel {
     position: relative;         
     display: inline-flex;       
@@ -98,7 +119,7 @@ body {
     left: 0;                    
 }
 
-/* --- Efecto Deluxe --- */
+/* Efect Deluxe */
 
 .card-premium {
     background-color: $obsidian-matte;  
@@ -114,7 +135,7 @@ body {
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9); 
 }
 
-/* --- tipografía y Layout --- */
+/* fonts */
 .hero-aethel {
     background: radial-gradient(circle at center, $obsidian-matte 0%, $obsidian-black 100%);
     display: flex;
@@ -134,30 +155,8 @@ body {
     font-size: 0.75rem;
     border-color: rgba(197, 160, 89, 0.3);
 }
-/* --- Navbar --- */
-.aethel-nav {
-    background: rgba($obsidian-black, 0.85);
-    backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba($muted-gold, 0.1);
-    padding: 20px 0;
-}
 
-.nav-link-aethel {
-    color: $raw-linen;
-    letter-spacing: $ls-normal;
-    font-size: 0.9rem;
-    transition: $aethel-transition;
-}
-
-.nav-link-aethel:hover {
-    color: $muted-gold;
-}
-.sticky-top.shadow {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 
-                0 1px 0 rgba(197, 160, 89, 0.05) !important;
-}
-
-/* --- Inputs --- */
+/* Inputs */
 .aethel-input {
     background-color: transparent !important;
     border: none;
@@ -172,7 +171,7 @@ body {
     border-bottom-color: $muted-gold;
 }
 
-/* --- Helpers --- */
+/*  Helpers */
 .ls-2 { letter-spacing: $ls-normal; }
 .ls-3 { letter-spacing: $ls-wide; font-size: 0.7rem; }
 
@@ -186,7 +185,7 @@ body {
     font-style: italic;
 }
 
-/* sombra del modal */
+/* shadow modal */
 .modal-content {
     box-shadow: 0 0 50px rgba(0,0,0,1);
 }
