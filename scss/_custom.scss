@@ -152,6 +152,10 @@ body {
 .nav-link-aethel:hover {
     color: $muted-gold;
 }
+.sticky-top.shadow {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 
+                0 1px 0 rgba(197, 160, 89, 0.05) !important;
+}
 
 /* --- Inputs --- */
 .aethel-input {
