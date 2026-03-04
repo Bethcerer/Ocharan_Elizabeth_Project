@@ -1,15 +1,12 @@
-/* --- Variables Globales --- */
 const container = document.querySelector(".containerCards");
 const navSticky = document.querySelector("#navSticky");
-const cartContainer = document.querySelector("#cartContainer");
-const cartCount = document.querySelector("#cartCount");
-const cartTotal = document.querySelector("#cartTotal");
+const cartContainer = document.querySelector("#cart-items");
+const cartCount = document.querySelector("#cart-count");
+const cartTotal = document.querySelector("#cart-total");
 
-let cData = [];
 const lang = "fr";
-let cart = [];
 
-/* --- LocalStorage --- */
+/* LocalStorage */
 const saveCartStorage = () => {
   localStorage.setItem("cartTechStore", JSON.stringify(cart));
 };
@@ -19,10 +16,11 @@ const readCartStorage = () => {
   return datosStorage ? JSON.parse(datosStorage) : [];
 };
 
-// load LocalStorage
-cart = readCartStorage();
+/* load LocalStorage */
+let cData = [];
+let cart = readCartStorage();
 
-// json
+/*  json */
 async function loadJson() {
   try {
     const reponse = await fetch("collection.json");
@@ -40,7 +38,7 @@ async function loadJson() {
   }
 }
 
-/* --- Cards --- */
+/* Cards */
 function loadCards(products) {
   if (!container) return;
   container.innerHTML = "";
@@ -74,7 +72,7 @@ function loadCards(products) {
   });
 }
 
-/* --- cart --- */
+/* AddCart */
 function addToCart(idProducto) {
   const existe = cart.find((item) => item.id === idProducto);
 
@@ -93,6 +91,7 @@ function addToCart(idProducto) {
   updateCartUI();
 }
 
+/* updateCartUI */
 function updateCartUI() {
   if (!cartContainer) return;
   cartContainer.innerHTML = "";
@@ -133,32 +132,40 @@ function updateCartUI() {
   if (cartTotal)
     cartTotal.textContent = `$ ${totalPrecio.toLocaleString("de-DE", { minimumFractionDigits: 2 })}`;
 
+  //cartCount.textContent = totalProductos;
+  //cartTotal.textContent = `$ ${totalPrecio.toFixed(2)}`;
+
   if (cart.length === 0) {
     cartContainer.innerHTML = `<p class="text-muted text-center py-4 small italic">Votre panier est vide</p>`;
   }
 }
 
+/* Add/Supp */
 function operatorCart(id, operacion) {
   const item = cart.find((p) => p.id === id);
   if (!item) return;
 
-  if (operacion === "mas") {
-    item.cantidad++;
-  } else if (operacion === "menos") {
-    if (item.cantidad > 1) {
-      item.cantidad--;
-    } else {
+  switch (operacion) {
+    case "mas":
+      item.cantidad++;
+      break;
+    case "menos":
+      if (item.cantidad > 1) {
+        item.cantidad--;
+      } else {
+        cart = cart.filter((p) => p.id !== id);
+      }
+      break;
+    case "todo":
       cart = cart.filter((p) => p.id !== id);
-    }
-  } else if (operacion === "todo") {
-    cart = cart.filter((p) => p.id !== id);
+      break;
   }
 
   saveCartStorage();
   updateCartUI();
 }
 
-/* --- cards Modal --- */
+/* cards Modal */
 function showProductDetails(id) {
   const prod = cData.find((p) => p.id === id);
   if (!prod) return;
@@ -195,7 +202,6 @@ function showProductDetails(id) {
   const modalElement = document.getElementById("productosModal");
   const bsModal = bootstrap.Modal.getOrCreateInstance(modalElement);
 
-  //
   const addBtn = modalBody.querySelector(".btn-add-cart");
   addBtn.onclick = () => {
     addToCart(prod.id);
@@ -205,9 +211,7 @@ function showProductDetails(id) {
   bsModal.show();
 }
 
-/* --- Events --- */
-
-// "Découvrir"
+/* Btn modal details */
 container.addEventListener("click", (e) => {
   const btn = e.target.closest(".btn-aethel");
   if (btn) {
@@ -221,13 +225,13 @@ if (cartContainer) {
   cartContainer.addEventListener("click", (e) => {
     const btn = e.target.closest(".btn-op");
     if (!btn) return;
-    const id = btn.dataset.id; // Sin parseInt para IDs alfanuméricos
+    const id = btn.dataset.id;
     const operacion = btn.dataset.op;
     operatorCart(id, operacion);
   });
 }
 
-// btns Filters
+/* btns Filters */
 const filterBtns = document.querySelectorAll("[data-filter]");
 filterBtns.forEach((button) => {
   button.addEventListener("click", () => {
@@ -244,7 +248,7 @@ filterBtns.forEach((button) => {
   });
 });
 
-// Btn Ascensión
+/* Btn top */
 const btnAscension = document.getElementById("backToTop");
 if (btnAscension) {
   window.addEventListener("scroll", () => {
@@ -260,7 +264,7 @@ if (btnAscension) {
   });
 }
 
-// Validation forms
+/*  Validation forms */
 const nom = document.querySelector("#nom");
 if (nom) {
   nom.addEventListener("input", () => {
@@ -274,5 +278,5 @@ if (nom) {
   });
 }
 
-// load initial
+/* load initial */
 loadJson();
