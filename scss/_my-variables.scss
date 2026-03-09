@@ -1,24 +1,27 @@
-/* Palette: Aethel & Bit */
-$obsidian-black: #0D0D0D;
-$obsidian-matte: #121212;
-$titanium-silver: #E5E5E5;
-$muted-gold: #C5A059;
-$raw-linen: #D2CDC4;
-$moss-deep: #2D3A2D;
+// --- Aethel & Bit: Palette Éthéré V2 (Cyanite Edition) ---
+$obsidian-deep: #050505;
+$titanium-brushed: #E2E2E2;
 
-/* Font */
+// El nuevo Azul: Energía fría y tecnológica
+$glacial-electric: #00D1FF; // Para acentos, iconos y glows
+$glacial-mist: #6DB9D1; // Para textos secundarios (más legible)
+$ether-glow: rgba(0, 209, 255, 0.2);
+
+$pure-white: #FFFFFF;
+
+// --- Typography ---
 $font-serif: 'Cormorant Garamond', serif;
 $font-sans: 'Inter', sans-serif;
 
-/* Variables bootstrap */
-$primary: $obsidian-matte;
-$secondary: $titanium-silver;
-$warning: $muted-gold;
-$info: $raw-linen;
-$body-bg: $obsidian-black;
-$body-color: $raw-linen;
+// --- Bootstrap Overrides ---
+$primary: $obsidian-deep;
+$secondary: $glacial-mist;
+$warning: $titanium-brushed;
+$info: $glacial-electric; // Ahora info es el azul eléctrico
+$body-bg: $obsidian-deep;
+$body-color: rgba($pure-white, 0.7); // Blanco etéreo para lectura larga
 
-/* Custom Spacing / Transitions  */
-$aethel-transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-$ls-wide: 5px;
+// --- Custom Spacing & Transitions ---
+$aethel-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+$ls-wide: 6px;
 $ls-normal: 2px;

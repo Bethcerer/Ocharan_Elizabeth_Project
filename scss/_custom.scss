@@ -1,99 +1,114 @@
+/* --- Global & Body --- */
 body {
-    background-color: $obsidian-black;
+    background-color: $obsidian-deep;
     color: $body-color;
     font-family: $font-sans;
-}
-/* navbar */
-.aethel-nav {
-    background: rgba($obsidian-black, 0.85);
-    backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba($muted-gold, 0.1);
-    padding: 20px 0;
+    -webkit-font-smoothing: antialiased;
 }
 
-.nav-link-aethel {
-    color: $raw-linen;
-    letter-spacing: $ls-normal;
-    font-size: 0.9rem;
-    transition: $aethel-transition;
+h1,
+h2,
+.serif {
+    color: $pure-white;
+    text-shadow: 0 0 15px rgba($glacial-mist, 0.2);
 }
 
-.nav-link-aethel:hover {
-    color: $muted-gold;
-}
-.sticky-top.shadow {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 
-                0 1px 0 rgba(197, 160, 89, 0.05) !important;
-}
-
-/* hero section */
+/* --- Hero Section --- */
 .hero-aethel {
     height: 100vh;
-    background: radial-gradient(circle at center, $obsidian-matte 0%, $obsidian-black 100%);
+    background: radial-gradient(circle at 50% 50%, #0f1215 0%, $obsidian-deep 100%);
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-title {
     font-family: $font-serif;
     font-weight: 200;
     font-style: italic;
-    letter-spacing: -2px;
-    color: $titanium-silver;
+    letter-spacing: -1px;
+    color: $pure-white;
 }
 
-/* cards */
+/* --- Cards Premium --- */
 .card-premium {
-    
-    background-color: $obsidian-matte; 
-    transition: $aethel-transition;
-    
-    border: 1px solid rgba($muted-gold, 0.1); 
-    border-radius: 0; 
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
+    height: 100%;
+
+    background: linear-gradient(180deg, #0A0A0A 0%, $obsidian-deep 100%);
+
+    border: 1px solid rgba($glacial-electric, 0.1);
+    border-radius: 0;
+
+    transition: transform .4s ease, border-color .4s ease, box-shadow .4s ease;
 }
 
 .card-premium:hover {
     transform: translateY(-10px);
-    
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    border-color: rgba($muted-gold, 0.5);
+    border-color: rgba($glacial-electric, 0.4);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-.card-title-aethel {
-    font-family: $font-serif;
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: $titanium-silver; 
-    letter-spacing: 1px;
-}
-
-/* Products */
 .card-premium img {
-    transition: transform 1.2s cubic-bezier(0.25, 0.8, 0.25, 1);
-    filter: grayscale(40%) brightness(0.8); 
+    transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+    filter: grayscale(100%) brightness(0.7);
 }
 
 .card-premium:hover img {
-    transform: scale(1.08);
+    transform: scale(1.05);
     filter: grayscale(0%) brightness(1);
 }
 
-/* Btns Aethel */
+
+/* Brillo perimetral que sigue al mouse en las cards */
+
+.card-premium::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+            rgba($glacial-electric, 0.12),
+            transparent 40%);
+
+    opacity: 0;
+    transition: opacity .4s;
+    pointer-events: none;
+}
+
+.card-premium:hover::before {
+    opacity: 1;
+}
+
+
+
+
+/* Asegura que el contenido esté por encima del brillo */
+.card-body-aethel,
+.product-image-container {
+    position: relative;
+    z-index: 3;
+}
+
+/* --- Botones Aethel --- */
 .btn-aethel {
-    position: relative;         
-    display: inline-flex;       
+    position: relative;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 35px;
-    overflow: hidden;           
-    border: 1px solid #C5A059;  
-    color: #C5A059;
+    padding: 14px 40px;
+    overflow: hidden;
+    border: 1px solid $titanium-brushed;
+    color: $titanium-brushed;
     background: transparent;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    letter-spacing: 4px;
+    font-size: 0.75rem;
+    transition: transform .4s ease, box-shadow .4s ease, border-color .4s ease;
     text-decoration: none;
     z-index: 1;
 }
@@ -102,103 +117,78 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    left: -100%;                
+    left: -100%;
     width: 100%;
     height: 100%;
-    background-color: $muted-gold;
-    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-    z-index: -1;                
+    background-color: $titanium-brushed;
+    transition: $aethel-transition;
+    z-index: -1;
 }
 
 .btn-aethel:hover {
-    color: $obsidian-black !important; 
-    box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+    color: $obsidian-deep !important;
+    box-shadow: 0 0 30px rgba($titanium-brushed, 0.2);
 }
 
 .btn-aethel:hover::before {
-    left: 0;                    
+    left: 0;
 }
 
-/* Efect Deluxe */
-
-.card-premium {
-    background-color: $obsidian-matte;  
-    border: 1px solid rgba(197, 160, 89, 0.1); 
-    border-radius: 0;
-    transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
-    height: 100%;
+/* --- Navbar --- */
+.aethel-nav {
+    background: rgba($obsidian-deep, 0.9);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba($titanium-brushed, 0.1);
+    padding: 25px 0;
 }
 
-.card-premium:hover {
-    transform: translateY(-10px);
-    border-color: rgba(197, 160, 89, 0.5); 
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9); 
+.nav-link-aethel {
+    color: $glacial-mist;
+    letter-spacing: $ls-normal;
+    font-size: 0.85rem;
+    transition: $aethel-transition;
+    text-decoration: none;
 }
 
-/* fonts */
-.hero-aethel {
-    background: radial-gradient(circle at center, $obsidian-matte 0%, $obsidian-black 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.nav-link-aethel:hover {
+    color: $pure-white;
 }
 
-.serif {
-    font-family: 'Cormorant Garamond', serif;
-}
-
-/* filtros de productos */
+/* --- Filtros --- */
 .btn-outline-warning {
     border-radius: 0;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.75rem;
-    border-color: rgba(197, 160, 89, 0.3);
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    color: $titanium-brushed;
+    border-color: rgba($titanium-brushed, 0.2);
+    background: transparent;
 }
 
-/* Inputs */
-.aethel-input {
-    background-color: transparent !important;
-    border: none;
-    border-bottom: 1px solid rgba($muted-gold, 0.3);
-    border-radius: 0;
-    color: $raw-linen !important;
-    transition: $aethel-transition;
+.btn-outline-warning.active,
+.btn-outline-warning:hover {
+    background-color: $titanium-brushed !important;
+    border-color: $titanium-brushed !important;
+    color: $obsidian-deep !important;
 }
+
+/* --- Form Inputs --- */
+
 
 .aethel-input:focus {
     box-shadow: none;
-    border-bottom-color: $muted-gold;
+    border-bottom-color: $titanium-brushed;
 }
 
-/*  Helpers */
-.ls-2 { letter-spacing: $ls-normal; }
-.ls-3 { letter-spacing: $ls-wide; font-size: 0.7rem; }
-
-.product-image-container {
-    height: 300px;
-    overflow: hidden;
-    background-color: #000;
-}
-
-.italic {
-    font-style: italic;
-}
-
-/* shadow modal */
-.modal-content {
-    box-shadow: 0 0 50px rgba(0,0,0,1);
-}
-
-/* --- Btn Ascension --- */
+/* --- Botón Ascension --- */
 .btn-ascension {
     position: fixed;
     bottom: 40px;
     right: 40px;
-    background: rgba($obsidian-black, 0.6); 
-    backdrop-filter: blur(8px);
-    color: $muted-gold; 
-    border: 1px solid rgba($muted-gold, 0.2);
+    background: rgba($obsidian-deep, 0.8);
+    backdrop-filter: blur(10px);
+    color: $titanium-brushed;
+    border: 1px solid rgba($titanium-brushed, 0.2);
     width: 50px;
     height: 80px;
     display: flex;
@@ -207,11 +197,10 @@ body {
     justify-content: center;
     cursor: pointer;
     z-index: 999;
-
     opacity: 0;
     visibility: hidden;
-    transform: translateY(20px); 
-    transition: $aethel-transition; 
+    transform: translateY(20px);
+    transition: $aethel-transition;
 }
 
 .btn-ascension.show {
@@ -221,94 +210,270 @@ body {
 }
 
 .btn-ascension:hover {
-    border-color: $muted-gold;
-    background: $obsidian-matte;
-    color: $titanium-silver;
+    border-color: $titanium-brushed;
+    color: $pure-white;
 }
 
-.btn-ascension i {
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
-    display: inline-block; 
-}
-
-.btn-ascension:hover i {
-    transform: translateY(-5px);
-}
-
-.ascension-text {
-    font-family: $font-sans;
-    font-size: 0.6rem;
-    text-transform: uppercase;
+/* --- Helpers --- */
+.ls-2 {
     letter-spacing: $ls-normal;
-    margin-top: 8px;
+}
+
+.ls-3 {
+    letter-spacing: $ls-wide;
+}
+
+.product-image-container {
+    height: 350px;
+    overflow: hidden;
+    background: #000;
+}
+
+/* Forzar esquinas rectas en todos los botones del proyecto */
+.btn,
+.btn-aethel,
+.btn-outline-warning,
+.form-control,
+.modal-content {
+    border-radius: 0 !important;
+}
+
+/* Arreglar el radio de las imágenes en el carrito que pusiste en el JS */
+.cart-item-img {
+    border-radius: 0 !important;
+    border: 1px solid rgba($titanium-brushed, 0.1);
+}
+
+/* --- Botón Cerrar Carrito (La X) --- */
+.btn-close-aethel {
+    background: transparent;
+    border: none;
+    color: $glacial-mist;
+    /* Color base sutil */
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0 10px;
+    transition: $aethel-transition;
+    cursor: pointer;
     font-weight: 200;
-}
-/* Cart */
-.offcanvas {
-    background-color: $obsidian-black; 
-    color: $raw-linen; 
-    border-left: 1px solid rgba(197, 160, 89, 0.2) !important;
+    /* Fina y elegante */
 }
 
-.offcanvas-header {
-    border-bottom: 1px solid rgba(197, 160, 89, 0.1);
+.btn-close-aethel:hover {
+    color: $pure-white;
+    /* Brilla al pasar el mouse */
+    //transform: rotate(90deg);
+    /* Un micro-detalle de lujo */
+    filter: drop-shadow(0 0 5px rgba($glacial-mist, 0.5));
 }
 
-.offcanvas-title {
-    font-family: 'Cormorant Garamond', serif;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: $muted-gold; 
-}
-
-/* btn close */
+/* Si usas el botón nativo de cierre de los modales de Bootstrap */
 .btn-close {
-    filter: invert(1) sepia(1) saturate(5) hue-rotate(10deg); 
-    opacity: 0.8;
+    filter: invert(1) grayscale(100%) brightness(2);
+    /* Lo vuelve blanco/titanio */
+    opacity: 0.5;
+    transition: $aethel-transition;
 }
 
-/* cart's items */
-#cart-items .list-group-item {
-    background-color: transparent;
-    border-bottom: 1px solid rgba(229, 229, 229, 0.05);
-    padding: 1.5rem 0;
+.btn-close:hover {
+    opacity: 1;
 }
 
-/* form modal */
-#contactoModal .modal-content {
-    background-color: $obsidian-matte;
-    border: 1px solid rgba(197, 160, 89, 0.3);
+/* --- Modal Detalle: Versión Éthéré Full Screen --- */
+#productosModal .modal-dialog {
+    max-width: 1000px;
+    margin: 5vh auto;
 }
 
-#contactoModal .card {
-    background-color: transparent !important;
-    color: $raw-linen; 
+#productosModal .modal-content {
+    background: rgba($obsidian-deep, 0.96);
+    border: 1px solid rgba($glacial-electric, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 40px 120px rgba(0, 0, 0, 0.8);
 }
-.form-label {
-    font-family: 'Inter', sans-serif;
+
+
+/* Animación de entrada: El contenido "respira" */
+#productosModal.fade .modal-dialog {
+    transform: scale(1.05);
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#productosModal.show .modal-dialog {
+    transform: scale(1);
+}
+
+/* Layout del detalle para que no parezca una web común */
+.product-reveal-container {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* --- Modal Estilo Santuario Azul --- */
+.modal-content {
+    background-color: $obsidian-deep !important;
+    border: 1px solid rgba($glacial-electric, 0.2) !important;
+    border-radius: 0 !important;
+    /* Un aura azul que sale del modal */
+    box-shadow: 0 0 80px rgba(0, 209, 255, 0.1) !important;
+}
+
+/* El título del producto en el modal con un toque de luz */
+.modal-body h2.serif {
+    color: $pure-white;
+    text-shadow: 0 0 20px rgba($glacial-electric, 0.4);
+}
+
+/* La categoría en el azul eléctrico */
+.text-info {
+    color: $glacial-electric !important;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.fa-solid {
+    font-size: small;
+}
+
+.modal-product-image-container {
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+}
+
+.modal-product-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* drawer */
+
+.contact-drawer {
+    position: fixed;
+    bottom: -700px;
+    right: 20px;
+
+    width: 90%;
+    max-width: 700px;
+    height: auto;
+
+    background: $obsidian-deep;
+    border: 1px solid rgba($glacial-electric, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    z-index: 2500;
+    transition: bottom 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+
+
+}
+
+.drawer-handle {
+    width: 50px;
+    height: 3px;
+    background: $glacial-electric;
+    margin: -20px auto 35px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+/* estado abierto */
+
+.contact-drawer.open {
+    bottom: 0;
+}
+
+.contact-drawer form {
+    max-width: 520px;
+    margin: auto;
+}
+
+/* Inputs Minimalistas Éthéré */
+.aethel-input {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid rgba($glacial-electric, 0.2) !important;
+    color: $pure-white !important;
+
+    padding: 10px 0 !important;
+    font-size: 0.9rem;
+
+    transition: border-color .4s ease;
+}
+
+.aethel-input:focus {
+    border-bottom-color: $glacial-electric !important;
+    box-shadow: none !important;
+}
+
+.aethel-input::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+/* Estilo para el SELECT (Eliminar flecha estándar) */
+select.aethel-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+}
+
+.vertical-text h2 {
+    letter-spacing: 10px;
+}
+
+.vertical-text p {
     text-transform: uppercase;
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    color: $muted-gold; 
-    margin-bottom: 10px;
+    letter-spacing: 4px;
+    opacity: .7;
 }
-textarea.form-control {
-    background-color: rgba(255, 255, 255, 0.03) !important;
-    border: none;
-    border-bottom: 1px solid rgba(197, 160, 89, 0.3);
-    border-radius: 0;
-    color: #E5E5E5 !important;
+
+.vertical-special {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-textarea.form-control:focus {
-    background-color: rgba(255, 255, 255, 0.05) !important;
-    border-bottom-color: $muted-gold; 
-    box-shadow: none;
+
+.drawer-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(5, 10, 15, 0.55);
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity .4s ease;
+
+    z-index: 2400;
 }
-.input-group-text {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid rgba(197, 160, 89, 0.3);
-    color: $muted-gold; 
-    border-radius: 0;
+
+.drawer-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+
+    .contact-drawer {
+        right: 50%;
+        transform: translateX(50%);
+        width: 90%;
+        bottom: -700%;
+    }
+
 }

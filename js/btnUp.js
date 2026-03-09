@@ -1,7 +1,7 @@
 const btn = document.getElementById("btnUp");
 
 window.addEventListener("scroll", () => {
-    btn.classList.toggle("show", window.scrollY > 300);
+    btn.classList.toggle("show", window.scrollY > 400);
 });
 
 
