@@ -12,7 +12,7 @@
             },
             "phrase": "Une sculpture de titane et de basalte qui sculpte le vide.",
             "description": {
-                "fr": "Une sculpture générant un champ d'annulation acoustique active à 360 degrés. Crée une zone de silence absolu dans un rayon de trois mètres pour une déconnexion totale.",
+                "fr": "Ce dispositif génère un champ d'annulation acoustique active à 360 degrés, créant une zone de silence absolu dans un rayon de trois mètres. L'objet ultime pour ceux qui considèrent la tranquillité comme le luxe le plus rare.",
                 "en": "An obsidian device that creates a 3-meter signal-free sanctuary for deep focus."
             },
             "price": 9200
@@ -24,9 +24,9 @@
                 "en": "Aura Mirror",
                 "fr": "Miroir Aura"
             },
-            "phrase": "Le reflet cognitif qui harmonise votre énergie par la lumière.",
+            "phrase": "Le reflet cognitif qui harmonise votre énergie. Sa technologie circadienne ajuste l'aura lumineuse pour optimiser votre cortisol et votre énergie quotidienne.",
             "description": {
-                "fr": "Analyse votre état émotionnel dès votre réveil. Sa technologie circadienne ajuste l'aura lumineuse pour optimiser votre cortisol et votre énergie quotidienne.",
+                "fr": "Le miroir réinventé. Derrière son verre d'obsidiana pur, une intelligence artificielle analyse subtilement votre état émotionnel et physiologique dès votre réveil. Sa technologie d'éclairage circadien ajuste l'aura lumineuse pour optimiser votre énergie, transformant votre reflet en un rituel de bien-être quotidien",
                 "en": "Smart mirror that adjusts home lighting based on biometric cortisol analysis."
             },
             "price": 22400
@@ -54,7 +54,7 @@
             },
             "phrase": "L'extension numérique de votre pensée sur surface en graphène.",
             "description": {
-                "fr": "Tablette en titane ultra-fine simulant la résistance du papier. Numérise vos notes avec une précision moléculaire, capturant l'essence de l'intention.",
+                "fr": "L'extension numérique de votre pensée. Cette tablette en titane ultra-fine utilise une surface en graphène qui simule parfaitement la résistance du papier. Sa technologie Neural-Ink numérise vos croquis et notes avec une précision moléculaire, capturant l'essence de l'intention derrière chaque trait.",
                 "en": "E-paper device for distraction-free writing with AI conceptual organization."
             },
             "price": 18900
@@ -68,7 +68,7 @@
             },
             "phrase": "Le temps suspendu par la danse des ferrofluides magnétiques.",
             "description": {
-                "fr": "Le temps devient une expérience visuelle. Ce sablier utilise des ferrofluides en lévitation pour marquer des intervalles organiques au lieu du temps linéaire.",
+                "fr": "Le temps, suspendu. Ce sablier ne contient pas de sable, mais des ferrofluides en lévitation magnétique. À travers son boîtier en titane et cristal, les particules dansent pour marquer des intervalles de temps fluides et organiques, transformant la mesure du temps en une expérience visuelle hypnotique.",
                 "en": "Micro-LED hourglass that measures flow state instead of linear time."
             },
             "price": 14500
@@ -80,9 +80,9 @@
                 "en": "The Ghost Composer",
                 "fr": "Le Compositeur Fantôme"
             },
-            "phrase": "L'IA générative au service de la co-création musicale.",
+            "phrase": "L'Écho de l'Inconscient",
             "description": {
-                "fr": "Un piano quart-de-queue de haute ébénisterie qui co-crée et complète vos mélodies en temps réel grâce à une intelligence artificielle symphonique.",
+                "fr": "Un piano quart-de-queue dont les touches en titane poli ne frappent pas seulement des cordes, mais interprètent vos intentions. Grâce à un moteur d'IA générative neuronale, il écoute votre mélodie initiale et commence à co-créer avec vous, complétant des harmonies complexes que seul un maître aurait pu imaginer. Ce n'est pas un instrument, c'est un dialogue avec l'infini.",
                 "en": "A baby grand piano that co-creates and completes melodies in real-time."
             },
             "price": 45000
@@ -150,9 +150,9 @@
                 "en": "Hydro-Zen Planter",
                 "fr": "Jardinière Hydro-Zen"
             },
-            "phrase": "La symbiose parfaite entre nature et ingénierie.",
+            "phrase": "Écosystème autonome sous cristal de borosilicate. La symbiose parfaite entre nature et ingénierie.",
             "description": {
-                "fr": "Écosystème autonome sous cristal de borosilicate. Technologie hydroponique et cycles circadiens pour nourrir la vie et purifier votre air.",
+                "fr": "Un écosystème autonome sous cloche de cristal. Cette jardinière intègre une technologie hydroponique silencieuse et une base en titane sculpté. Elle utilise des cycles lumineux circadiens pour nourrir vos plantes tout en purifiant l'air. La symbiose parfaite entre la nature et la haute ingénierie.",
                 "en": "Levitating planter that autonomously moves towards optimal sunlight."
             },
             "price": 8400
@@ -178,9 +178,9 @@
                 "en": "Bio-Leather Briefcase",
                 "fr": "Mallette en Bio-Cuir"
             },
-            "phrase": "Le futur de la maroquinerie auto-régénérative.",
+            "phrase": "Un accessoire de voyage éternel né de la biotechnologie.",
             "description": {
-                "fr": "Conçue en cuir de mycélium symbiotique, elle efface seule les éraflures en 24 heures. Un accessoire de voyage éternel né de la biotechnologie.",
+                "fr": "L'évolution du luxe durable. Conçue en cuir de mycélium auto-régénératif et titane de grade médical, cette mallette efface d'elle-même les éraflures en 24 heures. Un accessoire de voyage intelligent, ultra-léger et indestructible, né de la biotechnologie de pointe.",
                 "en": "Mycelium leather briefcase grown to order, heals itself in 24h."
             },
             "price": 15200
