@@ -6,6 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
 h1,
 h2,
 .serif {
@@ -451,13 +452,13 @@ select.aethel-input {
 
     background: rgba(5, 10, 15, 0.55);
 
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
 
     opacity: 0;
     pointer-events: none;
 
-    transition: opacity .4s ease;
+    transition: opacity 0.3s linear;
 
     z-index: 2400;
 }

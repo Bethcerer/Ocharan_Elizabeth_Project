@@ -69,8 +69,6 @@ function loadCards(products) {
 
             <div class="card-body-aethel d-flex flex-column flex-grow-1">
 
-                <p class="text-warning small ls-3 mb-1">${item.id}</p>
-
                 <h4 class="serif text-white mb-2">${item.name[lang]}</h4>
 
                 <h5 class="text-info small opacity-50 mb-3">
@@ -82,17 +80,24 @@ function loadCards(products) {
                 </h4>
 
                 <p class="text-secondary small opacity-70 mb-4 flex-grow-1 italic">
-                    "${item.description[lang].substring(0, 85)}..."
+                    "${item.phrase}"
                 </p>
-
-                <div class="mt-auto">
+                
+                <div class="d-grid gap-3 mt-5">
                     <button class="btn btn-aethel w-100" data-id="${item.id}">
                         DÉCOUVRIR
+                    </button>
+                    <button class="btn btn-link text-white-50 text-decoration-none small btn-direct-add ls-2 data-id="${item.id}">
+                    AJOUTER À LA SÉLECTION
                     </button>
                 </div>
 
             </div>
         </div>`;
+
+        col.querySelector(".btn-direct-add").onclick = (e) => {
+            addToCart(item.id);
+        }
 
         /* efecto luz */
 
@@ -210,7 +215,7 @@ function updateCartUI() {
 
         cartContainer.innerHTML =
             `<p class="text-muted text-center py-4 small italic">
-            Votre panier est vide
+            Votre sélection est vide.
             </p>`;
     }
 }
@@ -292,7 +297,7 @@ function showProductDetails(id) {
             </p>
             <div class="d-grid gap-3 mt-5">
 
-            <button class="btn btn-aethel btn-add-cart" data-id="${prod.id}"> AJOUTER AU PANIER
+            <button class="btn btn-aethel btn-add-cart" data-id="${prod.id}"> AJOUTER À LA SÉLECTION
             </button>
             <button class="btn btn-link text-white-50 text-decoration-none small ls-2" data-bs-dismiss="modal">
                     RETOUR
