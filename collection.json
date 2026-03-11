@@ -110,7 +110,7 @@
             },
             "phrase": "Un art génératif qui respire au rythme de son environnement.",
             "description": {
-                "fr": "Cadre numérique ultra-fin affichant un art évoluant selon la lumière ambiante et la météo. Une œuvre éternellement changeante sous titane.",
+                "fr": "Ce cadre de titane brossé renferme une matrice de pixels organiques auto-génératifs, capables de reproduire non seulement la couleur, mais aussi la texture de l'huile, du fusain ou de la lumière pure. Grâce à un processeur neuronal intégré, la toile observe son environnement : elle réagit à l'intensité du soleil, à la mélodie ambiante du Compositeur Fantôme ou même à la présence de votre regard. Chaque œuvre affichée est unique, une génération éphémère qui évolue lentement, seconde après seconde, pour ne plus jamais se répéter. C'est le luxe de posséder un instant qui meurt au moment même où il est admiré.",
                 "en": "Ultra-thin digital frame displaying art that evolves with ambient light."
             },
             "price": 12800
@@ -164,12 +164,12 @@
                 "en": "The Nomad Tent",
                 "fr": "La Tente Nomade"
             },
-            "phrase": "Le refuge ultime en soie technique et graphène solaire.",
+            "phrase": "Concept: L'Habitacle Éthéré. Le refuge ultime en soie technique et graphène solaire.",
             "description": {
                 "fr": "Un sanctuaire mobile capable de récolter l'énergie photonique. Conçu pour un luxe absolu et une autonomie totale dans les environnements les plus reculés.",
                 "en": "Graphene tent that harvests solar energy for ultra-luxury living."
             },
-            "price": 32000
+            "price": 62000
         },
         {
             "id": "AB-013",
@@ -208,10 +208,10 @@
             },
             "phrase": "La réplique exacte des aurores boréales arctiques.",
             "description": {
-                "fr": "Dispositif d'éclairage capturant et répliquant l'essence chromatique des aurores célestes. Une lumière boréale privée dans votre jardin.",
+                "fr": "C'est un fragment capturé de l'aurore boréale. Ce cylindre de borosilicate cristallin renferme un réacteur à plasma miniature en lévitation magnétique. Il ne génère pas de lumière par filament, mais en ionisant des gaz rares à des fréquences spécifiques. Grâce à un processeur neuronal intégré, la lanterne analyse votre rythme biologique, la musique ambiante ou même les variations atmosphériques. Chaque soir, elle recrée une chorégraphie unique de lumières fluides, oscillant entre le cian glacial et le vert boréal, s'adaptant lentement pour apaiser votre esprit et transformer votre espace en un sanctuaire de paix.",
                 "en": "Outdoor lamp replicating Arctic aurora light data."
             },
-            "price": 7500
+            "price": 31500
         },
         {
             "id": "AB-016",
@@ -282,6 +282,20 @@
                 "en": "AR sunglasses that filter out urban advertising and smog."
             },
             "price": 25000
+        },
+        {
+            "id": "AB-021",
+            "category": "Expériences",
+            "name": {
+                "en": "The Culinary Alchemist",
+                "fr": "L’Alchimiste Culinaire"
+            },
+            "phrase": "Le résonateur moléculaire de saveur.",
+            "description": {
+                "fr": "Véritable résonateur moléculaire, il capte la signature électromagnétique d’un aliment et la transpose par micro-impulsions acoustiques. Une goutte d’eau pure devient alors le support d’une empreinte gustative immatérielle. Une méditation sensorielle où la saveur existe sans matière.",
+                "en": "This object does not cook; it reveals the essence of flavor. A molecular resonator that captures the electromagnetic signature of rare ingredients. Through precise acoustic micro-pulses, it imprints their subtle taste into pure water or a neutral wafer. A sensory meditation where flavor exists beyond matter."
+            },
+            "price": 18500
         }
     ]
 }
