@@ -6,7 +6,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-
 h1,
 h2,
 .serif {
@@ -88,14 +87,14 @@ h2,
 
 
 
-/* Asegura que el contenido esté por encima del brillo */
+/* Contenido encima del brillo */
 .card-body-aethel,
 .product-image-container {
     position: relative;
     z-index: 3;
 }
 
-/* --- Botones Aethel --- */
+/* --- Btns Aethel --- */
 .btn-aethel {
     position: relative;
     display: inline-flex;
@@ -155,7 +154,7 @@ h2,
     color: $pure-white;
 }
 
-/* --- Filtros --- */
+/* --- Filters --- */
 .btn-outline-warning {
     border-radius: 0;
     text-transform: uppercase;
@@ -173,15 +172,8 @@ h2,
     color: $obsidian-deep !important;
 }
 
-/* --- Form Inputs --- */
 
-
-.aethel-input:focus {
-    box-shadow: none;
-    border-bottom-color: $titanium-brushed;
-}
-
-/* --- Botón Ascension --- */
+/* --- Btn Ascension --- */
 .btn-ascension {
     position: fixed;
     bottom: 40px;
@@ -230,7 +222,7 @@ h2,
     background: #000;
 }
 
-/* Forzar esquinas rectas en todos los botones del proyecto */
+/* !important asegura bordes rectos */
 .btn,
 .btn-aethel,
 .btn-outline-warning,
@@ -239,39 +231,33 @@ h2,
     border-radius: 0 !important;
 }
 
-/* Arreglar el radio de las imágenes en el carrito que pusiste en el JS */
+/* Cart */
 .cart-item-img {
     border-radius: 0 !important;
     border: 1px solid rgba($titanium-brushed, 0.1);
 }
 
-/* --- Botón Cerrar Carrito (La X) --- */
 .btn-close-aethel {
     background: transparent;
     border: none;
     color: $glacial-mist;
-    /* Color base sutil */
+    
     font-size: 1.5rem;
     line-height: 1;
     padding: 0 10px;
     transition: $aethel-transition;
     cursor: pointer;
     font-weight: 200;
-    /* Fina y elegante */
+    
 }
 
 .btn-close-aethel:hover {
     color: $pure-white;
-    /* Brilla al pasar el mouse */
-    //transform: rotate(90deg);
-    /* Un micro-detalle de lujo */
     filter: drop-shadow(0 0 5px rgba($glacial-mist, 0.5));
 }
 
-/* Si usas el botón nativo de cierre de los modales de Bootstrap */
 .btn-close {
     filter: invert(1) grayscale(100%) brightness(2);
-    /* Lo vuelve blanco/titanio */
     opacity: 0.5;
     transition: $aethel-transition;
 }
@@ -281,10 +267,10 @@ h2,
 }
 
 /* --- Modal Detalle: Versión Éthéré Full Screen --- */
-#productosModal .modal-dialog {
+/*#productosModal .modal-dialog {
     max-width: 1000px;
     margin: 5vh auto;
-}
+}*/
 
 #productosModal .modal-content {
     background: rgba($obsidian-deep, 0.96);
@@ -294,7 +280,7 @@ h2,
 }
 
 
-/* Animación de entrada: El contenido "respira" */
+/* animation sur card */
 #productosModal.fade .modal-dialog {
     transform: scale(1.05);
     transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
@@ -304,7 +290,7 @@ h2,
     transform: scale(1);
 }
 
-/* Layout del detalle para que no parezca una web común */
+/* Layout del detalle */
 .product-reveal-container {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
@@ -312,22 +298,21 @@ h2,
     align-items: center;
 }
 
-/* --- Modal Estilo Santuario Azul --- */
+/* --- modal --- */
 .modal-content {
     background-color: $obsidian-deep !important;
     border: 1px solid rgba($glacial-electric, 0.2) !important;
     border-radius: 0 !important;
-    /* Un aura azul que sale del modal */
+    
     box-shadow: 0 0 80px rgba(0, 209, 255, 0.1) !important;
 }
 
-/* El título del producto en el modal con un toque de luz */
 .modal-body h2.serif {
     color: $pure-white;
     text-shadow: 0 0 20px rgba($glacial-electric, 0.4);
 }
 
-/* La categoría en el azul eléctrico */
+/* category */
 .text-info {
     color: $glacial-electric !important;
     letter-spacing: 3px;
@@ -350,7 +335,6 @@ h2,
 }
 
 /* drawer */
-
 .contact-drawer {
     position: fixed;
     bottom: -700px;
@@ -380,8 +364,7 @@ h2,
     opacity: 0.6;
 }
 
-/* estado abierto */
-
+/* open - drawer */
 .contact-drawer.open {
     bottom: 0;
 }
@@ -391,6 +374,11 @@ h2,
     margin: auto;
 }
 
+/* --- Form Inputs --- */
+/*.aethel-input:focus {
+    box-shadow: none;
+    border-bottom-color: $titanium-brushed;
+}*/
 /* Inputs Minimalistas Éthéré */
 .aethel-input {
     background: transparent !important;
@@ -415,7 +403,7 @@ h2,
     font-size: 0.8rem;
 }
 
-/* Estilo para el SELECT (Eliminar flecha estándar) */
+/* Estilo del select */
 select.aethel-input {
     -webkit-appearance: none;
     -moz-appearance: none;
