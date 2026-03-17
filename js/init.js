@@ -256,19 +256,10 @@ function operatorCart(id, operacion) {
 /* Clear all*/
 function clearCart() {
 
-    if (confirm("Voulez-vous effacer votre sélection actuelle ?")) {
-        cart = [];
-        saveCartStorage();
-        updateCartUI();
-    }
+    cart = [];
+    saveCartStorage();
+    updateCartUI();
 }
-
-// Event
-document.addEventListener("click", (e) => {
-    if (e.target.id === "btn-clear-cart" || e.target.closest("#btn-clear-cart")) {
-        clearCart();
-    }
-});
 
 /* MODAL DETAILS */
 
