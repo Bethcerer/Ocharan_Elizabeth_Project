@@ -333,7 +333,7 @@ h2,
 
     width: 90%;
     max-width: 700px;
-    height: auto;
+    height: 70vh;
 
     background: $obsidian-deep;
     border: 1px solid rgba($glacial-electric, 0.25);
@@ -388,6 +388,8 @@ h2,
     font-style: italic;
     font-size: 0.8rem;
 }
+
+
 
 /* Estilo del select */
 select.aethel-input {

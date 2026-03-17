@@ -420,17 +420,19 @@ document.addEventListener("DOMContentLoaded", () => {
     overlay?.addEventListener("click", closeDrawer);
 
     // --- validation submit---
+    const content = document.getElementById("drawer-content");
+
     if (form) {
         form.addEventListener("submit", (event) => {
             event.preventDefault();
 
             if (validateForm()) {
 
-                form.style.transition = "opacity 0.4s";
-                form.style.opacity = "0";
+                content.style.transition = "opacity 0.4s";
+                content.style.opacity = "0";
 
                 setTimeout(() => {
-                    form.classList.add("d-none");
+                    content.classList.add("d-none");
 
 
                     const successMsg = document.getElementById("success-message");
@@ -443,15 +445,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     setTimeout(() => {
                         closeDrawer();
 
-
                         setTimeout(() => {
                             form.reset();
-                            form.classList.remove("d-none");
-                            form.style.opacity = "1";
+
+                            content.classList.remove("d-none");
+                            content.style.opacity = "1";
+
                             if (successMsg) successMsg.classList.add("d-none");
-                            form.querySelectorAll(".form-control").forEach(i => i.classList.remove("is-valid", "is-invalid"));
+
+                            form.querySelectorAll(".form-control")
+                                .forEach(i => i.classList.remove("is-valid", "is-invalid"));
+
                         }, 500);
-                    }, 3500);
+                    }, 3000);
                 }, 400);
             }
         });
@@ -527,3 +533,53 @@ function showSuccess(input) {
 }
 
 
+/* CHECKOUT */
+
+function processCheckout() {
+    const btnCheckout = document.querySelector("#btn-checkout");
+    const cartContent = document.querySelector("#cart-content-wrapper");
+    const cartSuccess = document.querySelector("#cart-success-message");
+    const offcanvasElement = document.getElementById("offcanvasCart");
+
+    if (!btnCheckout || cart.length === 0) return;
+
+
+    cartContent.style.transition = "opacity 0.4s ease";
+    cartContent.style.opacity = "0";
+
+    setTimeout(() => {
+        cartContent.classList.add("d-none");
+
+
+        if (cartSuccess) {
+            cartSuccess.classList.remove("d-none");
+            cartSuccess.classList.add("fade-in");
+        }
+
+
+        cart = [];
+        saveCartStorage();
+
+
+        setTimeout(() => {
+            const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+            if (bsOffcanvas) bsOffcanvas.hide();
+
+
+            setTimeout(() => {
+                updateCartUI();
+                cartContent.classList.remove("d-none");
+                cartContent.style.opacity = "1";
+                if (cartSuccess) cartSuccess.classList.add("d-none");
+            }, 800);
+        }, 3500);
+
+    }, 400);
+}
+
+// event click btn-checkout
+document.addEventListener("click", (e) => {
+    if (e.target.id === "btn-checkout") {
+        processCheckout();
+    }
+});
