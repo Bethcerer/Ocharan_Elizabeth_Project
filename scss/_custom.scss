@@ -263,11 +263,20 @@ h2,
     opacity: 1;
 }
 
+#productosModal .modal-dialog {
+    max-width: 900px;
+}
+
 #productosModal .modal-content {
     background: rgba($obsidian-deep, 0.96);
     border: 1px solid rgba($glacial-electric, 0.2);
     backdrop-filter: blur(15px);
     box-shadow: 0 40px 120px rgba(0, 0, 0, 0.8);
+
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -390,15 +399,6 @@ h2,
 }
 
 
-
-/* Estilo del select */
-/*select.aethel-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    cursor: pointer;
-}*/
-
 .vertical-text {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -478,7 +478,7 @@ h2,
 }
 
 //btn clear all
-.xsmall {
+.xsmall-custom {
     font-size: 0.6rem;
     opacity: 0.6;
     transition: $aethel-transition;

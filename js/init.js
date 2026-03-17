@@ -260,6 +260,11 @@ function clearCart() {
     saveCartStorage();
     updateCartUI();
 }
+document.addEventListener("click", (e) => {
+    if (e.target.id === "btn-clear-cart" || e.target.closest("#btn-clear-cart")) {
+        clearCart();
+    }
+});
 
 /* MODAL DETAILS */
 

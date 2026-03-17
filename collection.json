@@ -10,7 +10,7 @@
                 "en": "The Silent Stone",
                 "fr": "La Pierre du Silence"
             },
-            "phrase": "Une sculpture de titane et de basalte qui sculpte le vide.",
+            "phrase": "Une sculpture de titane et de basalte conçue pour sculpter le vide et instaurer un sanctuaire acoustique absolu.",
             "description": {
                 "fr": "Ce dispositif génère un champ d'annulation acoustique active à 360 degrés, créant une zone de silence absolu dans un rayon de trois mètres. L'objet ultime pour ceux qui considèrent la tranquillité comme le luxe le plus rare.",
                 "en": "An obsidian device that creates a 3-meter signal-free sanctuary for deep focus."
@@ -24,9 +24,9 @@
                 "en": "Aura Mirror",
                 "fr": "Miroir Aura"
             },
-            "phrase": "Le reflet cognitif qui harmonise votre énergie.",
+            "phrase": "Le reflet cognitif qui harmonise votre énergie vitale grâce à une intelligence artificielle prédictive.",
             "description": {
-                "fr": "Le miroir réinventé. Derrière son verre d'obsidiana pur, une intelligence artificielle analyse subtilement votre état émotionnel et physiologique dès votre réveil. Sa technologie d'éclairage circadien ajuste l'aura lumineuse pour optimiser votre énergie, transformant votre reflet en un rituel de bien-être quotidien",
+                "fr": "Le miroir réinventé. Derrière son verre d'obsidienne pure, une intelligence artificielle analyse subtilement votre état émotionnel et physiologique dès votre réveil. Sa technologie d'éclairage circadien ajuste l'aura lumineuse pour optimiser votre énergie, transformant votre reflet en un rituel de bien-être quotidien.",
                 "en": "Smart mirror that adjusts home lighting based on biometric cortisol analysis."
             },
             "price": 22400
@@ -38,7 +38,7 @@
                 "en": "Deep Breath Pillow",
                 "fr": "Oreiller Respiration Profonde"
             },
-            "phrase": "Une interface de repos synchronisée sur vos rythmes biologiques.",
+            "phrase": "Une interface de repos haptique synchronisée sur vos rythmes biologiques pour un sommeil régénérateur.",
             "description": {
                 "fr": "Bien plus qu'un oreiller, une interface de repos. Sa structure en polymère à mémoire de forme régule votre température corporelle en temps réel. Grâce à des capteurs biométriques discrets, il émet des micro-vibrations apaisantes synchronisées sur votre rythme cardiaque pour induire un sommeil profond et réparateur.",
                 "en": "Haptic technology pillow that synchronizes with your rhythm to induce REM sleep."
@@ -52,7 +52,7 @@
                 "en": "Neural-Ink Tablet",
                 "fr": "Tablette Neural-Ink"
             },
-            "phrase": "L'extension numérique de votre pensée sur surface en graphène.",
+            "phrase": "L'extension numérique de votre pensée sur une surface en graphène simulant la noblesse du papier.",
             "description": {
                 "fr": "L'extension numérique de votre pensée. Cette tablette en titane ultra-fine utilise une surface en graphène qui simule parfaitement la résistance du papier. Sa technologie Neural-Ink numérise vos croquis et notes avec une précision moléculaire, capturant l'essence de l'intention derrière chaque trait.",
                 "en": "E-paper device for distraction-free writing with AI conceptual organization."
@@ -66,7 +66,7 @@
                 "en": "Chronos Sandglass",
                 "fr": "Sablier Chronos"
             },
-            "phrase": "Le temps suspendu par la danse des ferrofluides magnétiques.",
+            "phrase": "Le temps suspendu par la danse hypnotique des ferrofluides sous lévitation magnétique.",
             "description": {
                 "fr": "Le temps, suspendu. Ce sablier ne contient pas de sable, mais des ferrofluides en lévitation magnétique. À travers son boîtier en titane et cristal, les particules dansent pour marquer des intervalles de temps fluides et organiques, transformant la mesure du temps en une expérience visuelle hypnotique.",
                 "en": "Micro-LED hourglass that measures flow state instead of linear time."
@@ -80,7 +80,7 @@
                 "en": "The Ghost Composer",
                 "fr": "Le Compositeur Fantôme"
             },
-            "phrase": "L'Écho de l'Inconscient",
+            "phrase": "L'écho de votre inconscient traduit en harmonies complexes par un piano à queue neuronal.",
             "description": {
                 "fr": "Un piano quart-de-queue dont les touches en titane poli ne frappent pas seulement des cordes, mais interprètent vos intentions. Grâce à un moteur d'IA générative neuronale, il écoute votre mélodie initiale et commence à co-créer avec vous, complétant des harmonies complexes que seul un maître aurait pu imaginer. Ce n'est pas un instrument, c'est un dialogue avec l'infini.",
                 "en": "A baby grand piano that co-creates and completes melodies in real-time."
@@ -94,7 +94,7 @@
                 "en": "Scent-Memory Diffuser",
                 "fr": "Diffuseur de Souvenirs"
             },
-            "phrase": "La cartographie olfactive de vos moments les plus précieux.",
+            "phrase": "Le parfum est la forme la plus intense de la mémoire. Il ne se contente pas de parfumer un espace, il le transmute.",
             "description": {
                 "fr": "Dispositif transformant les données GPS de vos souvenirs numériques en fragrances sur mesure. Une immersion sensorielle unique dans votre propre passé.",
                 "en": "Generates custom fragrances based on GPS coordinates of digital memories."
@@ -108,9 +108,9 @@
                 "en": "The Infinite Canvas",
                 "fr": "La Toile Infinie"
             },
-            "phrase": "Un art génératif qui respire au rythme de son environnement.",
+            "phrase": "Un art génératif vivant qui respire et évolue au rythme de son environnement immédiat.",
             "description": {
-                "fr": "Ce cadre de titane brossé renferme une matrice de pixels organiques auto-génératifs, capables de reproduire non seulement la couleur, mais aussi la texture de l'huile, du fusain ou de la lumière pure. Grâce à un processeur neuronal intégré, la toile observe son environnement : elle réagit à l'intensité du soleil, à la mélodie ambiante du Compositeur Fantôme ou même à la présence de votre regard. Chaque œuvre affichée est unique, une génération éphémère qui évolue lentement, seconde après seconde, pour ne plus jamais se répéter. C'est le luxe de posséder un instant qui meurt au moment même où il est admiré.",
+                "fr": "Ce cadre de titane brossé renferme une matrice de pixels organiques auto-génératifs, capables de reproduire non seulement la couleur, mais aussi la texture de l'huile, du fusain ou de la lumière pure. Grâce à un processeur neuronal intégré, la toile observe son environnement : elle réagit à l'intensité du soleil, à la mélodie ambiante du Compositeur Fantôme ou même à la présence de votre regard. Chaque œuvre affichée est unique, une génération éphémère qui évolue lentement, seconde après seconde, pour ne plus jamais se répéter.",
                 "en": "Ultra-thin digital frame displaying art that evolves with ambient light."
             },
             "price": 12800
@@ -122,7 +122,7 @@
                 "en": "Linguistic Quill",
                 "fr": "La Plume Linguistique"
             },
-            "phrase": "Le pont entre le manuscrit et la traduction universelle.",
+            "phrase": "Le pont sacré entre le manuscrit artisanal et la traduction universelle instantanée.",
             "description": {
                 "fr": "Stylo plume traduisant vos écrits manuscrits en temps réel via un écran OLED invisible. L'élégance de l'encre alliée à l'intelligence linguistique.",
                 "en": "Fountain pen that translates handwritten text via an invisible display."
@@ -136,7 +136,7 @@
                 "en": "The Mood Vinyl",
                 "fr": "Le Vinyle d'Humeur"
             },
-            "phrase": "Une acoustique réceptive à vos battements de cœur.",
+            "phrase": "Une acoustique réceptive à vos émotions, adaptant sa playlist à vos battements de cœur.",
             "description": {
                 "fr": "Disque en céramique adaptant sa playlist et sa texture sonore selon le rythme cardiaque des personnes présentes dans la pièce. Une expérience vivante.",
                 "en": "Ceramic vinyl record that adapts based on the room's heart rate."
@@ -150,7 +150,7 @@
                 "en": "Hydro-Zen Planter",
                 "fr": "Jardinière Hydro-Zen"
             },
-            "phrase": "Écosystème autonome sous cristal de borosilicate. La symbiose parfaite entre nature et ingénierie.",
+            "phrase": "Un écosystème autonome sous cristal de borosilicate, symbiose parfaite entre nature et ingénierie.",
             "description": {
                 "fr": "Un écosystème autonome sous cloche de cristal. Cette jardinière intègre une technologie hydroponique silencieuse et une base en titane sculpté. Elle utilise des cycles lumineux circadiens pour nourrir vos plantes tout en purifiant l'air. La symbiose parfaite entre la nature et la haute ingénierie.",
                 "en": "Levitating planter that autonomously moves towards optimal sunlight."
@@ -164,7 +164,7 @@
                 "en": "The Nomad Tent",
                 "fr": "La Tente Nomade"
             },
-            "phrase": "Concept: L'Habitacle Éthéré. Le refuge ultime en soie technique et graphène solaire.",
+            "phrase": "L'habitacle éthéré par excellence, conçu en soie technique et graphène solaire pour une liberté totale.",
             "description": {
                 "fr": "Un sanctuaire mobile capable de récolter l'énergie photonique. Conçu pour un luxe absolu et une autonomie totale dans les environnements les plus reculés.",
                 "en": "Graphene tent that harvests solar energy for ultra-luxury living."
@@ -178,7 +178,7 @@
                 "en": "Bio-Leather Briefcase",
                 "fr": "Mallette en Bio-Cuir"
             },
-            "phrase": "Un accessoire de voyage éternel né de la biotechnologie.",
+            "phrase": "Un accessoire de voyage éternel et auto-régénératif né de la biotechnologie de pointe.",
             "description": {
                 "fr": "L'évolution du luxe durable. Conçue en cuir de mycélium auto-régénératif et titane de grade médical, cette mallette efface d'elle-même les éraflures en 24 heures. Un accessoire de voyage intelligent, ultra-léger et indestructible, né de la biotechnologie de pointe.",
                 "en": "Mycelium leather briefcase grown to order, heals itself in 24h."
@@ -192,7 +192,7 @@
                 "en": "Le Décanteur Solaire",
                 "fr": "Le Décanteur Solaire"
             },
-            "phrase": "L'exaltation des arômes par l'énergie photonique.",
+            "phrase": "L'exaltation des arômes millésimés par la précision des impulsions ultrasoniques solaires.",
             "description": {
                 "fr": "Accélérateur d'oxygénation utilisant des impulsions ultrasoniques solaires. Libère les arômes les plus complexes de vos crus en quelques minutes.",
                 "en": "Uses solar ultrasonic frequencies to accelerate wine aging."
@@ -206,9 +206,9 @@
                 "en": "Aurora Lantern",
                 "fr": "Lanterne Aurora"
             },
-            "phrase": "La réplique exacte des aurores boréales arctiques.",
+            "phrase": "La réplique exacte des aurores boréales arctiques capturée dans un esphere de borosilicate.",
             "description": {
-                "fr": "C'est un fragment capturé de l'aurore boréale. Ce cylindre de borosilicate cristallin renferme un réacteur à plasma miniature en lévitation magnétique. Il ne génère pas de lumière par filament, mais en ionisant des gaz rares à des fréquences spécifiques. Grâce à un processeur neuronal intégré, la lanterne analyse votre rythme biologique, la musique ambiante ou même les variations atmosphériques. Chaque soir, elle recrée une chorégraphie unique de lumières fluides, oscillant entre le cian glacial et le vert boréal, s'adaptant lentement pour apaiser votre esprit et transformer votre espace en un sanctuaire de paix.",
+                "fr": "C'est un fragment capturé de l'aurore boréale. Ce esphere de borosilicate cristallin renferme un réacteur à plasma miniature en lévitation magnétique. Il ne génère pas de lumière par filament, mais en ionisant des gaz rares à des fréquences spécifiques. Grâce à un processeur neuronal intégré, la lanterne analyse votre rythme biologique, la musique ambiante ou même les variations atmosphériques. Chaque soir, elle recrée une chorégraphie unique de lumières fluides, oscillant entre le cyan glacial et le vert boréal, s'adaptant lentement pour apaiser votre esprit et transformer votre espace en un sanctuaire de paix.",
                 "en": "Outdoor lamp replicating Arctic aurora light data."
             },
             "price": 31500
@@ -220,7 +220,7 @@
                 "en": "Legacy Archive",
                 "fr": "Archive d'Héritage"
             },
-            "phrase": "Préservez votre voix et votre sagesse pour l'éternité.",
+            "phrase": "Préservez votre sagesse et votre ADN numérique pour l'éternité dans un monolithe de quartz.",
             "description": {
                 "fr": "La mémoire est fragile, le temps est impitoyable. Archive d’Héritage est le bastion final de votre existence. Ce monolithe de basalte noir et de verre de quartz synthétique n’est pas un simple support de stockage, c’est une capsule temporelle active. Utilisant une technologie de gravure nanométrique au laser sur quartz, il est capable de conserver vos données — souvenirs, écrits, ADN numérique et schémas neuronaux — pendant plus de dix mille ans sans dégradation. Son interface, protégée par une clé biométrique unique en titane, ne s'active qu'en présence de votre lignée. C'est le luxe de l'immortalité : confier son héritage à une structure plus résistante que la civilisation elle-même.",
                 "en": "Interactive AI biography preserving your voice for future generations."
@@ -234,7 +234,7 @@
                 "en": "Digital Detox Kit",
                 "fr": "Kit de Retraite Digitale"
             },
-            "phrase": "Le luxe ultime du silence et de la présence analogique.",
+            "phrase": "Le luxe ultime de la clarté et du silence, une armure contre le bruit numérique du monde.",
             "description": {
                 "fr": "La déconnexion n’est plus un acte de rébellion, c’est le luxe ultime de la clarté. Le Kit de Retraite Digitale est une armure contre le bruit du monde. Ce coffret monolithique en basalte et titane contient les instruments nécessaires pour instaurer un sanctuaire cognitif immédiat. Il comprend une Lentille de Perspective simplifiée pour l'épuration visuelle, un inhibiteur de fréquences en saphir qui crée une bulle de silence absolu, et un étui de neutralisation biométrique pour vos dispositifs numériques. En ouvrant ce kit, vous ne fermez pas seulement vos écrans ; vous ouvrez une parenthèse temporelle où seule votre conscience pure est autorisée à résider. C'est l'invitation à redevenir le seul architecte de vos pensées.",
                 "en": "Time-locked safe with analog photography gear for digital detox."
@@ -248,7 +248,7 @@
                 "en": "Personal Soundscape",
                 "fr": "Paysage Sonore Personnel"
             },
-            "phrase": "La bande sonore de votre vie, composée par l'IA. Le son ne doit pas seulement être entendu, il doit être habité. Paysage Sonore Personnel est un système de projection holographique sonore qui redéfinit votre espace immédiat.",
+            "phrase": "Une architecture acoustique invisible qui sculpte votre environnement sonore en temps réel.",
             "description": {
                 "fr": "Ce monolithe de titane et de fibres de carbone tressées utilise la formation de faisceaux ultrasoniques pour sculpter des zones d'immersion totale sans l'usage de casques. Que vous souhaitiez vous entourer du murmure d'une forêt de pins sous la pluie ou de l'acoustique parfaite d'un opéra de marbre, l'IA générative crée un environnement audio qui se déplace avec vous. C'est l'architecture invisible : la capacité de transformer un appartement métropolitain en un sanctuaire naturel sauvage par la seule force de la précision acoustique.",
                 "en": "A unique 24-hour soundtrack composed for your routines."
@@ -262,9 +262,9 @@
                 "en": "DNA Gastronomy",
                 "fr": "Coffret Gastronomie ADN"
             },
-            "phrase": "La nutrition de précision adaptée à votre code génétique. La gastronomie n'est plus une question de goût, mais de résonance biologique. Coffret Gastronomie ADN est l'apogée de la nutrition personnalisée.",
+            "phrase": "La nutrition de précision moléculaire adaptée spécifiquement à votre propre code génétique.",
             "description": {
-                "fr": "Ce coffret en basalte poli renferme un synthétiseur moléculaire relié à vos données biométriques en temps réel. En analysant vos besoins enzymatiques et votre état émotionnel via votre interface A&B, il compose des micro-doses gastronomiques d'une pureté absolue. Chaque essence, présentée dans des capsules de cristal de saphir, est une symphonie de nutriments et de saveurs conçue spécificamente pour votre code génétique. Ce n'est pas nourrir le corps, c'est optimiser l'existence à travers une expérience sensorielle mathématiquement parfaite.",
+                "fr": "Ce coffret en basalte poli renferme un synthétiseur moléculaire relié à vos données biométriques en temps réel. En analysant vos besoins enzymatiques et votre état émotionnel via votre interface A&B, il compose des micro-doses gastronomiques d'une pureté absolue. Chaque essence, présentée dans des capsules de cristal de saphir, est une symphonie de nutriments et de saveurs conçue spécifiquement pour votre code génétique. Ce n'est pas nourrir le corps, c'est optimiser l'existence à travers une expérience sensorielle mathématiquement parfaite.",
                 "en": "Precision nutrition kit tailored to your genetic profile."
             },
             "price": 14500
@@ -276,7 +276,7 @@
                 "en": "The Perspective Lens",
                 "fr": "Lentille de Perspective"
             },
-            "phrase": "Filtrez le chaos urbain pour ne voir que la pureté. Le monde moderne est saturé, une cacophonie visuelle qui masque la beauté pure de la structure. Lentille de Perspective n’est pas un dispositif pour voir plus, mais pour voir mieux.",
+            "phrase": "Filtrez le chaos urbain et les pollutions visuelles pour ne voir que la pureté architecturale.",
             "description": {
                 "fr": "Ces lunettes d’épuration architecturale, sculptées dans un bloc monolithique de titane et de saphir optique d’indice variable, agissent comme un filtre neuronal actif. Connectées par l'IA à votre Toile Infinie, elles analysent instantanément votre environnement urbain. D'un simple geste biométrique, activez le protocole 'Vide Pur' : la pollution, le smog, la signalétique chaotique et les publicités urbaines s'effacent en temps réel, ne laissant place qu'à l'architecture pure, aux lignes de force et à la lumière originelle. C'est le luxe ultime : la capacité de posséder un paysage épuré, une vision sanctifiée où que vous soyez.",
                 "en": "AR sunglasses that filter out urban advertising and smog."
@@ -290,7 +290,7 @@
                 "en": "The Culinary Alchemist",
                 "fr": "L’Alchimiste Culinaire"
             },
-            "phrase": "Le résonateur moléculaire de saveur.",
+            "phrase": "Un résonateur moléculaire capturant l'essence immatérielle des saveurs les plus rares du monde.",
             "description": {
                 "fr": "Véritable résonateur moléculaire, il capte la signature électromagnétique d’un aliment et la transpose par micro-impulsions acoustiques. Une goutte d’eau pure devient alors le support d’une empreinte gustative immatérielle. Une méditation sensorielle où la saveur existe sans matière.",
                 "en": "This object does not cook; it reveals the essence of flavor. A molecular resonator that captures the electromagnetic signature of rare ingredients. Through precise acoustic micro-pulses, it imprints their subtle taste into pure water or a neutral wafer. A sensory meditation where flavor exists beyond matter."
