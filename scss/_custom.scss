@@ -63,7 +63,7 @@ h2,
 }
 
 
-/* Brillo perimetral que sigue al mouse en las cards */
+/* Brillo del mouse en las cards */
 
 .card-premium::before {
     content: "";
@@ -392,12 +392,12 @@ h2,
 
 
 /* Estilo del select */
-select.aethel-input {
+/*select.aethel-input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     cursor: pointer;
-}
+}*/
 
 .vertical-text {
     writing-mode: vertical-rl;
@@ -468,6 +468,17 @@ select.aethel-input {
     }
 }
 
+.small-mobile {
+    font-size: 0.85rem;
+}
+
+.btns {
+    justify-content: center;
+    overflow: visible;
+}
+
+
+
 @media (max-width: 768px) {
     .contact-drawer {
         right: 50%;
@@ -484,4 +495,34 @@ select.aethel-input {
     .vertical-special {
         display: none !important;
     }
+
+    .small-mobile {
+        font-size: 0.7rem;
+    }
+
+    .btns {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 20px 15px;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::after {
+            content: '';
+            padding-right: 20px;
+        }
+
+
+    }
+
 }
