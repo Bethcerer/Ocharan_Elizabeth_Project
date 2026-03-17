@@ -87,7 +87,7 @@ function loadCards(products) {
                     <button class="btn btn-aethel w-100" data-id="${item.id}">
                         DÉCOUVRIR
                     </button>
-                    <button class="btn btn-link text-white-50 text-decoration-none small btn-direct-add ls-2 data-id="${item.id}">
+                    <button class="btn btn-link text-white-50 text-decoration-none small btn-direct-add ls-2" data-id="${item.id}">
                     AJOUTER À LA SÉLECTION
                     </button>
                 </div>
@@ -349,34 +349,6 @@ if (cartContainer) {
     });
 }
 
-/* CONTACT DRAWER */
-
-const contactDrawer = document.getElementById("contactDrawer");
-const triggerContact = document.getElementById("triggerContact");
-const closeContact = document.getElementById("closeContact");
-const overlay = document.getElementById("drawerOverlay");
-
-if (triggerContact) {
-    triggerContact.addEventListener("click", () => {
-        contactDrawer.classList.add("open");
-        if (overlay) overlay.classList.add("open");
-    });
-}
-
-if (closeContact) {
-    closeContact.addEventListener("click", () => {
-        contactDrawer.classList.remove("open");
-        if (overlay) overlay.classList.remove("open");
-    });
-}
-
-if (overlay) {
-    overlay.addEventListener("click", () => {
-        contactDrawer.classList.remove("open");
-        overlay.classList.remove("open");
-    });
-}
-
 
 /* btns Filters */
 const filterBtns = document.querySelectorAll("[data-filter]");
@@ -420,3 +392,138 @@ btn.addEventListener("keydown", e => {
         btn.click();
     }
 });
+
+
+/* Drawer et validation form */
+document.addEventListener("DOMContentLoaded", () => {
+    // ---  Drawer ---
+    const contactDrawer = document.getElementById("contactDrawer");
+    const triggerContact = document.getElementById("triggerContact");
+    const closeContact = document.getElementById("closeContact");
+    const overlay = document.getElementById("drawerOverlay");
+    const form = document.querySelector("#form-concierge");
+
+    // --- Functions Drawer ---
+    const openDrawer = () => {
+        contactDrawer?.classList.add("open");
+        overlay?.classList.add("open");
+    };
+
+    const closeDrawer = () => {
+        contactDrawer?.classList.remove("open");
+        overlay?.classList.remove("open");
+    };
+
+    // --- Drawer events listener---
+    triggerContact?.addEventListener("click", openDrawer);
+    closeContact?.addEventListener("click", closeDrawer);
+    overlay?.addEventListener("click", closeDrawer);
+
+    // --- validation submit---
+    if (form) {
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            if (validateForm()) {
+
+                form.style.transition = "opacity 0.4s";
+                form.style.opacity = "0";
+
+                setTimeout(() => {
+                    form.classList.add("d-none");
+
+
+                    const successMsg = document.getElementById("success-message");
+                    if (successMsg) {
+                        successMsg.classList.remove("d-none");
+                        successMsg.classList.add("fade-in");
+                    }
+
+
+                    setTimeout(() => {
+                        closeDrawer();
+
+
+                        setTimeout(() => {
+                            form.reset();
+                            form.classList.remove("d-none");
+                            form.style.opacity = "1";
+                            if (successMsg) successMsg.classList.add("d-none");
+                            form.querySelectorAll(".form-control").forEach(i => i.classList.remove("is-valid", "is-invalid"));
+                        }, 500);
+                    }, 3500);
+                }, 400);
+            }
+        });
+    }
+
+    // Validation in real time
+    document.querySelector("#InputNom")?.addEventListener("blur", () => validateField("#InputNom", 3));
+    document.querySelector("#InputPrenom")?.addEventListener("blur", () => validateField("#InputPrenom", 2));
+    document.querySelector("#InputEmail")?.addEventListener("blur", validateEmail);
+    document.querySelector("#InputMessage")?.addEventListener("blur", validateMessage);
+
+});
+
+
+
+// --- Functions---
+
+function validateField(selector, minLength) {
+    const input = document.querySelector(selector);
+    if (!input) return false;
+
+    if (input.value.trim().length < minLength) {
+        showError(input, `Minimum ${minLength} caractères requis.`);
+        return false;
+    }
+    showSuccess(input);
+    return true;
+}
+
+function validateEmail() {
+    const email = document.querySelector("#InputEmail");
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!emailRegex.test(email.value)) {
+        showError(email, "Veuillez entrer une adresse valide.");
+        return false;
+    }
+    showSuccess(email);
+    return true;
+}
+
+function validateMessage() {
+    const messageBox = document.querySelector("#InputMessage");
+    if (messageBox.value.trim().length >= 10) {
+        showSuccess(messageBox);
+        return true;
+    }
+    showError(messageBox, "Votre vision du luxe doit être plus détaillée (min. 10 char).");
+    return false;
+}
+
+
+function validateForm() {
+
+    const isNomValid = validateField("#InputNom", 3);
+    const isPrenomValid = validateField("#InputPrenom", 2);
+    const isEmailValid = validateEmail();
+    const isMessageValid = validateMessage();
+
+    return isNomValid && isPrenomValid && isEmailValid && isMessageValid;
+}
+
+function showError(input, message) {
+    const feedback = input.nextElementSibling;
+    input.classList.add("is-invalid");
+    input.classList.remove("is-valid");
+    feedback.textContent = message;
+}
+
+function showSuccess(input) {
+    input.classList.remove("is-invalid");
+    input.classList.add("is-valid");
+}
+
+

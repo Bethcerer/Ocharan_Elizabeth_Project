@@ -153,41 +153,39 @@
                     </div>
                 </div>
                 <div class="col-md-9">
+                    <div id="success-message" class="text-center d-none py-5">
+                        <i class="bi bi-check2-circle text-warning display-4 mb-3"></i>
+                        <h3 class="serif text-white">Merci.</h3>
+                        <p class="text-info ls-2 small">Votre vision a été transmise à l'Atelier.</p>
+                    </div>
                     <form class="row g-4" id="form-concierge" novalidate>
                         <div class="col-md-6">
-                            <label class="form-label xsmall ls-2 opacity-50 text-white">IDENTITÉ</label>
-                            <input type="text" class="form-control aethel-input" placeholder="Nom complet" required>
+                            <label class="form-label xsmall ls-2 opacity-50 text-white">NOM</label>
+                            <input type="text" class="form-control aethel-input" placeholder="Votre Nom" id="InputNom"
+                                aria-describedby="NomHelp" required>
+                            <div id="NomHelp" class="invalid-feedback"></div>
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label xsmall ls-2 opacity-50 text-white">COMMUNICATION</label>
-                            <input type="email" class="form-control aethel-input" placeholder="Email sécurisé" required>
+                            <label class="form-label xsmall ls-2 opacity-50 text-white">PRENOM</label>
+                            <input type="text" class="form-control aethel-input" placeholder="Votre Prenom"
+                                id="InputPrenom" aria-describedby="PrenomHelp" required>
+                            <div id="PrenomHelp" class="invalid-feedback"></div>
                         </div>
 
-                        <div class="col-md-6">
-                            <label class="form-label xsmall ls-2 opacity-50 text-white">NIVEAU DE
-                                CONFIDENTIALITÉ</label>
-                            <select
-                                class="form-select aethel-input bg-transparent text-white border-0 border-bottom rounded-0 shadow-none">
-                                <option value="standard" class="bg-dark">Standard Éthéré</option>
-                                <option value="high" class="bg-dark">Haute Discrétion (Chiffrement)</option>
-                                <option value="absolute" class="bg-dark">Silence Absolu (Concierge Dédié)</option>
-                            </select>
+                        <div class="col-md-12">
+                            <label class="form-label xsmall ls-2 opacity-50 text-white">COURRIEL</label>
+                            <input type="email" class="form-control aethel-input" placeholder="Email sécurisé"
+                                id="InputEmail" aria-describedby="emailHelp" required>
+                            <div id="emailHelp" class="invalid-feedback"></div>
                         </div>
 
-                        <div class="col-md-6">
-                            <label class="form-label xsmall ls-2 opacity-50 text-white">INTÉRÊT PRINCIPAL</label>
-                            <select
-                                class="form-select aethel-input bg-dark text-white border-0 border-bottom rounded-0 shadow-none">
-                                <option value="acquisition">Acquisition de Pièce</option>
-                                <option value="sur-mesure">Conception Sur-Mesure</option>
-                                <option value="experience">Expérience Immersive</option>
-                            </select>
-                        </div>
 
                         <div class="col-12">
                             <label class="form-label xsmall ls-2 opacity-50 text-white">VOTRE VISION DU LUXE</label>
                             <textarea class="form-control aethel-input" rows="2"
-                                placeholder="Décrivez votre sanctuaire idéal..."></textarea>
+                                placeholder="Décrivez votre sanctuaire idéal..." id="InputMessage"
+                                aria-describedby="MessageHelp"></textarea>
+                            <div id="MessageHelp" class="invalid-feedback"></div>
                         </div>
 
                         <div class="col-12 mt-5">
@@ -199,6 +197,7 @@
                 </div>
             </div>
         </div>
+
     </div>
     <!-- cart -->
     <div class="offcanvas offcanvas-end border-warning" tabindex="-1" id="offcanvasCart">

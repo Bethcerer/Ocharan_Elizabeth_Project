@@ -84,9 +84,6 @@ h2,
     opacity: 1;
 }
 
-
-
-
 /* Contenido encima del brillo */
 .card-body-aethel,
 .product-image-container {
@@ -241,14 +238,14 @@ h2,
     background: transparent;
     border: none;
     color: $glacial-mist;
-    
+
     font-size: 1.5rem;
     line-height: 1;
     padding: 0 10px;
     transition: $aethel-transition;
     cursor: pointer;
     font-weight: 200;
-    
+
 }
 
 .btn-close-aethel:hover {
@@ -265,12 +262,6 @@ h2,
 .btn-close:hover {
     opacity: 1;
 }
-
-/* --- Modal Detalle: Versión Éthéré Full Screen --- */
-/*#productosModal .modal-dialog {
-    max-width: 1000px;
-    margin: 5vh auto;
-}*/
 
 #productosModal .modal-content {
     background: rgba($obsidian-deep, 0.96);
@@ -303,7 +294,7 @@ h2,
     background-color: $obsidian-deep !important;
     border: 1px solid rgba($glacial-electric, 0.2) !important;
     border-radius: 0 !important;
-    
+
     box-shadow: 0 0 80px rgba(0, 209, 255, 0.1) !important;
 }
 
@@ -374,11 +365,6 @@ h2,
     margin: auto;
 }
 
-/* --- Form Inputs --- */
-/*.aethel-input:focus {
-    box-shadow: none;
-    border-bottom-color: $titanium-brushed;
-}*/
 /* Inputs Minimalistas Éthéré */
 .aethel-input {
     background: transparent !important;
@@ -456,13 +442,44 @@ select.aethel-input {
     pointer-events: auto;
 }
 
-@media (max-width: 768px) {
+/*  Success Message Animation  */
+#success-message {
+    animation: aethelReveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 
+    i {
+        color: $glacial-electric;
+        filter: drop-shadow(0 0 10px rgba($glacial-electric, 0.4));
+    }
+}
+
+@keyframes aethelReveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+@media (max-width: 768px) {
     .contact-drawer {
         right: 50%;
         transform: translateX(50%);
-        width: 90%;
-        bottom: -700%;
+        width: 100%;
+        bottom: -100vh;
+        padding: 30px 20px;
+
+        &.open {
+            bottom: 0;
+        }
     }
 
+    .vertical-special {
+        display: none !important;
+    }
 }
