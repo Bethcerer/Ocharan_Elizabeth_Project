@@ -477,7 +477,17 @@ h2,
     overflow: visible;
 }
 
+//btn clear all
+.xsmall {
+    font-size: 0.6rem;
+    opacity: 0.6;
+    transition: $aethel-transition;
 
+    &:hover {
+        opacity: 1;
+        color: $glacial-electric !important;
+    }
+}
 
 @media (max-width: 768px) {
     .contact-drawer {

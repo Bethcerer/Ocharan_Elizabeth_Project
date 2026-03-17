@@ -253,6 +253,23 @@ function operatorCart(id, operacion) {
     updateCartUI();
 }
 
+/* Clear all*/
+function clearCart() {
+
+    if (confirm("Voulez-vous effacer votre sélection actuelle ?")) {
+        cart = [];
+        saveCartStorage();
+        updateCartUI();
+    }
+}
+
+// Event
+document.addEventListener("click", (e) => {
+    if (e.target.id === "btn-clear-cart" || e.target.closest("#btn-clear-cart")) {
+        clearCart();
+    }
+});
+
 /* MODAL DETAILS */
 
 function showProductDetails(id) {
